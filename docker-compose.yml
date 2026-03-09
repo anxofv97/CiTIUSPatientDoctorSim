@@ -1,0 +1,22 @@
+services:
+    eeyore:
+        build: .
+        image: eeyore:latest
+        container_name: eeyore_deploy
+        environment:
+            PYTHONUNBUFFERED: "1"
+            HF_TOKEN: "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"
+        ports:
+            - "6416:6416"
+        volumes:
+            - hf_cache:/root/.cache/huggingface
+        deploy:
+            resources:
+                reservations:
+                    devices:
+                        - driver: nvidia
+                          count: all
+                          capabilities: [gpu]
+        restart: unless-stopped
+volumes:
+    hf_cache:
