@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Evaluate conversations in a folder with prompts from prompts_cactus.
+"""Evaluate conversations in a folder with prompts from prompts_evaluation.
 
 For each conversation (.txt) in the input folder, run each prompt (except
 panas_before/after) and parse the numeric score output. Produce per-conversation
@@ -17,7 +17,7 @@ from src.llm import LLM
 from src.notify import notify_start_process, notify_end_process
 
 ROOT = Path(__file__).resolve().parents[0]
-PROMPTS_DIR = ROOT / "prompts_cactus"
+PROMPTS_DIR = ROOT / "prompts_evaluation"
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("evaluate_folder")
