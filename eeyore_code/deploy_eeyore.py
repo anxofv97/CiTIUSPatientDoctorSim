@@ -1,7 +1,8 @@
 from starlette.applications import Starlette
 from starlette.responses import JSONResponse
 from starlette.routing import Route
-from transformers import pipeline
+from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
+import torch
 import asyncio
 import json
 import uvicorn
@@ -21,18 +22,46 @@ logger = logging.getLogger(__name__)
 pipe = None
 args = None
 
-def initialize_model(model_name, device_map="auto"):
-    """Initialize the model pipeline with error handling"""
+def initialize_model(model_name, device_map="auto", load_in_8bit=False, offload_folder=None):
+    """Initialize the model pipeline with optional 8-bit loading."""
     global pipe
     try:
-        logger.info(f"Loading model pipeline: {model_name}")
-        pipe = pipeline(
-            task="text-generation", 
-            model=model_name, 
+        logger.info(f"Loading model pipeline: {model_name} load_in_8bit={load_in_8bit}")
+
+        # Load tokenizer
+        tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True, trust_remote_code=True)
+
+        # Determine torch dtype: prefer fp16 on GPU
+        torch_dtype = torch.float16 if torch.cuda.is_available() else None
+
+        # Prepare quantization config for bitsandbytes (preferred API)
+        quant_config = None
+        if load_in_8bit:
+            try:
+                quant_config = BitsAndBytesConfig(load_in_8bit=True)
+            except Exception:
+                logger.warning("BitsAndBytesConfig unavailable or bitsandbytes not installed; falling back to no quantization")
+                quant_config = None
+
+        # Load model (use quantization_config when provided)
+        model = AutoModelForCausalLM.from_pretrained(
+            model_name,
             device_map=device_map,
-            torch_dtype="auto",  # Use automatic dtype for efficiency
-            trust_remote_code=True  # Allow custom model code
+            quantization_config=quant_config,
+            torch_dtype=torch_dtype,
+            low_cpu_mem_usage=True,
+            offload_folder=offload_folder,
+            trust_remote_code=True
         )
+
+        pipe = pipeline(
+            task="text-generation",
+            model=model,
+            tokenizer=tokenizer,
+            device_map=device_map,
+            trust_remote_code=True
+        )
+
         logger.info("Model pipeline loaded successfully")
         return True
     except Exception as e:
@@ -324,6 +353,20 @@ def parse_arguments():
     
     
     
+    # 8-bit and offload options
+    parser.add_argument(
+        "--load-in-8bit",
+        action="store_true",
+        help="Load model in 8-bit using bitsandbytes (requires bitsandbytes installed)"
+    )
+
+    parser.add_argument(
+        "--offload-folder",
+        type=str,
+        default="offload",
+        help="Folder path to use for CPU/NVMe offloading"
+    )
+
     return parser.parse_args()
 
 if __name__ == "__main__":
@@ -352,8 +395,8 @@ if __name__ == "__main__":
     logger.info(f"Exponential decay: {args.exponential_decay_length_penalty}")
     logger.info(f"Sequence bias: {args.sequence_bias}")
     
-    # Initialize the model
-    if not initialize_model(args.model, args.device_map):
+    # Initialize the model (support optional 8-bit loading and offload)
+    if not initialize_model(args.model, args.device_map, load_in_8bit=args.load_in_8bit, offload_folder=args.offload_folder):
         logger.error("Failed to initialize model. Exiting.")
         exit(1)
     

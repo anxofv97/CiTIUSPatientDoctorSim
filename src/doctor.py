@@ -11,12 +11,17 @@ class Doctor:
     Class to simulate a Doctor in a therapy session.
 
     """
-    def __init__(self, model_name: str = "qwen3", max_new_tokens: int = 1024, temperature: float = 0.7):
+    def __init__(self, model_name: str = "qwen3", max_new_tokens: int = 1024, temperature: float = 0.7, stopping_detection: bool = True):
         self.model = LLM(model_name=model_name)
+        if stopping_detection:
+            self.stopping_model = LLM(model_name="qwen3")
+        else:
+            self.stopping_model = None
 
         # Default generation parameters for the doctor's responses
         self.default_max_new_tokens = max_new_tokens
         self.default_temperature = temperature
+        self.stopping_detection = stopping_detection
 
         self.times_ended = 0  # how many times the doctor has detected the conversation end
         
@@ -48,7 +53,7 @@ class Doctor:
 
         last_messages: how many of the most recent messages to include in the prompt for the stopping criteria evaluation (default: 6)
         """
-        stopping_prompt = ""
+        stopping_prompt = "Here is the conversation you have to judge whether it has ended or not."
         recent_messages = self.get_conversation_history()[-last_messages:]
         # Parse conversation history into a prompt for the stopping criteria evaluation. Only include user and assistant messages, ignore system instructions. Format them as "Patient: ..." and "Doctor: ..." to make it clear for the model.
         for msg in recent_messages:
@@ -57,7 +62,7 @@ class Doctor:
                     stopping_prompt += f"Patient: {msg['content'].strip()}\n"
                 if msg["role"] == "assistant":
                     stopping_prompt += f"Doctor: {msg['content'].strip()}\n"
-        _, stopping_reply = self.model.run_prompt(stopping_prompt, instructions=DOCTOR_STOPPING, max_new_tokens=64)
+        _, stopping_reply = self.stopping_model.run_prompt(stopping_prompt, instructions=DOCTOR_STOPPING, max_new_tokens=32, do_sample=False, keep_history=False)
         if "Yes" in stopping_reply or "yes" in stopping_reply:
             return True
         return False
@@ -77,11 +82,12 @@ class Doctor:
         Returns:
             (raw_full_response, final_message_text)
         """
-        if self._check_conversation_ending():
-            self.times_ended += 1
-            logger.info(f"Doctor has detected end of conversation {self.times_ended} times.")
-        else:   # Reset the counter if conversation restarts
-            self.times_ended = 0
+        if self.stopping_detection:
+            if self._check_conversation_ending():
+                self.times_ended += 1
+                logger.info(f"Doctor has detected end of conversation {self.times_ended} times.")
+            else:   # Reset the counter if conversation restarts
+                self.times_ended = 0
         
         _, doc_reply = self.model.run_prompt(prompt, instructions=instructions, max_new_tokens=self.default_max_new_tokens, temperature=self.default_temperature, keep_history=True)
         # First time doctor detects end of conversation, add the insist prompt to try to continue the conversation

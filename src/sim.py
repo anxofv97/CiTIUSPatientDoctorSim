@@ -3,12 +3,13 @@ import logging.config
 import json
 import asyncio
 import re
+import os
 import unicodedata
 from datetime import datetime
 
 from .doctor import Doctor
 from .patient import Patient
-from.llm import LLM
+from .llm import LLM
 from .prompts import DOCTOR_INSTRUCTIONS
 from .eeyore_prompt import prepare_prompt_from_profile, create_cognitive_system_prompt
 
@@ -53,6 +54,9 @@ def generate_patient_prompt(profile_id: int, profile_path: str = "data/test_prof
     return patient_sys_prompt
 
 def clean_text(text):
+    """
+    Clean and normalize text. Ensure that no Unicode characters or special characters that could cause issues in downstream processing remain. Also normalize whitespace.
+    """
     # Explicit replacements
     replacements = {
         "“": '"',
@@ -78,41 +82,58 @@ def clean_text(text):
     return text
 
 def save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_completed):
-    # Dump conversation to a JSON file
+    # If output_path doesn't exist, create it
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+    # Collect histories and build dump
+    doctor_history_original = doctor.get_conversation_history()
+    doctor_history_trimmed = None
+
+    dump = {
+        "profile_id": profile_id,
+        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "max_turns": max_turns,
+        "num_turns_completed": turns_completed,
+        "doctor_model": getattr(doctor.model, "model_name", None),
+        "patient_messages": patient.get_conversation_history(),
+        "doctor_history_original": doctor_history_original,
+        "doctor_history_trimmed": doctor_history_trimmed,
+    }
+
+    fname = f"{output_path}/conversation_profile{profile_id}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}"
+
+    # Write JSON dump
     try:
-        dump = {
-            "profile_id": profile_id,
-            "timestamp": datetime.utcnow().isoformat() + "Z",
-            "max_turns": max_turns,
-            "num_turns_completed": turns_completed,
-            "patient_messages": patient.get_conversation_history(),
-            "doctor_history": doctor.get_conversation_history(),
-        }
-        fname = f"{output_path}/conversation_profile{profile_id}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}"
         with open(fname+".json", "w", encoding="utf-8") as jf:
             json.dump(dump, jf, ensure_ascii=False, indent=2)
         logger.info(f"Simulation dumped to {fname}")
     except Exception:
         logger.exception("Failed to write simulation dump")
-    try:
-        with open(fname+".txt", "w", encoding="ascii") as f:
-            for msg in dump["doctor_history"]:
-                if msg["role"] == "system":
-                    continue
 
-                if msg["role"] == "assistant":
+    # Save original conversation to TXT (and keep text in memory)
+    try:
+        original_txt = fname + "_original.txt"
+        original_lines = []
+        with open(original_txt, "w", encoding="ascii") as f:
+            for msg in dump.get("doctor_history_original", []):
+                if msg.get("role") == "system":
+                    continue
+                if msg.get("role") == "assistant":
                     speaker = "Clinician"
-                elif msg["role"] == "user":
+                elif msg.get("role") == "user":
                     speaker = "Client"
                 else:
                     continue
-
-                content = clean_text(msg["content"])
-                f.write(f"{speaker}: {content}\n\n")
+                content = clean_text(msg.get("content", ""))
+                line = f"{speaker}: {content}\n\n"
+                original_lines.append(line)
+                f.write(line)
+        original_text = "".join(original_lines)
+        logger.info(f"Original conversation dumped to {original_txt}")
     except Exception:
-        logger.exception("Failed to write conversation dump")
+        logger.exception("Failed to write conversation dump (original)")
 
-def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "http://127.0.0.1:6416/v1/chat/completions", profile_id: int = 0, expand_history: bool = False, max_turns: int = 10, output_path: str = "data_out"):
+def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "http://127.0.0.1:6416/v1/chat/completions", profile_id: int = 0, doctor_model: str = "qwen3", expand_history: bool = False, max_turns: int = 10, output_path: str = "data_out", stopping_detection: bool = True):
     """Run an automated conversation between the doctor LLM and the patient endpoint.
 
     - The doctor uses the local `LLM` (`doctor.get_response`) with `DOCTOR_INSTRUCTIONS_TEST` as system prompt.
@@ -130,7 +151,11 @@ def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "htt
     logger.info(f"Patient instructions: {patient_sys_prompt}")
     logger.info(f"Doctor instructions: {doctor_instructions}")
 
-    doctor = Doctor()
+    # Allow providing a local or HF model identifier for the doctor LLM
+    if doctor_model:
+        doctor = Doctor(model_name=doctor_model, max_new_tokens=256, stopping_detection=stopping_detection)
+    else:
+        doctor = Doctor(max_new_tokens=256, stopping_detection=stopping_detection)
     patient = Patient(patient_url=patient_url)
 
     # Configure doctor LLM with its system instructions
@@ -144,10 +169,18 @@ def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "htt
     # Alternate messages between patient (HTTP) and doctor (local LLM)
     for i in range(max_turns):
         # Send doctor's message to patient endpoint
-        pat_msg = patient.get_response(doc_msg)
-        logger.info(f"Patient: {pat_msg.strip()}")
+        try:
+            pat_msg = patient.get_response(doc_msg)
+            logger.info(f"Patient: {pat_msg.strip()}")
+        except Exception:
+            logger.exception("Error getting response from patient endpoint")
+            break
         # Send patient reply to doctor LLM
-        _, doc_reply = doctor.get_response(pat_msg)
+        try:
+            _, doc_reply = doctor.get_response(pat_msg)
+        except Exception:
+            logger.exception("Error getting response from doctor LLM")
+            break
         logger.info(f"Doctor: {doc_reply.strip()}")
         doc_msg = doc_reply
         if doctor.is_conversation_ended():
