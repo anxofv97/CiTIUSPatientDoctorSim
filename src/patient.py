@@ -11,7 +11,7 @@ from starlette.applications import Starlette
 from starlette.routing import Route
 import uvicorn
 
-from eeyore_code import deploy_eeyore
+from src import deploy_eeyore
 
 logger = logging.getLogger(__name__)
 

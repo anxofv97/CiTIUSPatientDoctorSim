@@ -11,7 +11,7 @@
 #SBATCH --qos=regular                 # Cola
 #SBATCH --output=log_%x_%j.log       # Standard output and error log
 
-source ~/.bashrc
+source ~/.bashrc # Load the .bashrc to ensure secrets are loaded (HF and Telegram tokens)
 source eeyore_env/bin/activate
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
@@ -32,8 +32,8 @@ export LANG=C.UTF-8
 #python3 evaluate_folder.py --folder data_out/models_1e_cactus_sft_1 --out data_eval/models_1e_cactus_sft_1_eval.jsonl
 #python3 evaluate_folder.py --folder data_out/models_1e_cactus_sft_5 --out data_eval/models_1e_cactus_sft_5_eval.jsonl
 #python3 evaluate_folder.py --folder data_out/models_1e_cactus_sft_50 --out data_eval/models_1e_cactus_sft_50_eval.jsonl
-
 python3 evaluate_folder.py --folder data_out/models_3e_cactus_sft_5 --out data_eval/models_3e_cactus_sft_5_eval.jsonl
+
 # Queue job: sbatch slurm.sh
 # Check job status: squeue
 # Cancel job: scancel <job_id>

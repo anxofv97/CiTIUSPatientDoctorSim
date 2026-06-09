@@ -11,7 +11,7 @@
 #SBATCH --qos=regular                 # Cola
 #SBATCH --output=log_%x_%j.log       # Standard output and error log
 
-source ~/.bashrc
+source ~/.bashrc # Load the .bashrc to ensure secrets are loaded (HF and Telegram tokens)
 source eeyore_env/bin/activate
 export LC_ALL=C.UTF-8
 export LANG=C.UTF-8

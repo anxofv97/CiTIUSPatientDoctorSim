@@ -35,7 +35,7 @@ logger = logging.getLogger(__name__)
 ############################################
 
 MODEL_NAME = "unsloth/Qwen3-4B-Instruct-2507"
-DEFAULT_ANNOMI_PATH = "AnnoMI-full.csv"
+DEFAULT_ANNOMI_PATH = "data/AnnoMI-full.csv"
 OUTPUT_DIR = "models/qwen-annomi-therapist"
 MAX_SEQ_LENGTH = 2048
 SYSTEM_PROMPT = DOCTOR_SFT
