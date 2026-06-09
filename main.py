@@ -1,18 +1,17 @@
+import json
 import logging
 import logging.config
-import json
-import sys
-from datetime import datetime
-import os
 
 from src.sim import run_doctor_patient_conversation
 from src.prompts import DOCTOR_INSTRUCTIONS, DOCTOR_INSTRUCTIONS_1, DOCTOR_INSTRUCTIONS_2, DOCTOR_INSTRUCTIONS_ONE_SHOT, DOCTOR_SFT
 from src.notify import notify_start_process, notify_end_process
+
 # Config logging from file
 def setup_logging(config_file="./logging_config.json"):
     with open(config_file, "r") as f:
         config = json.load(f)
     logging.config.dictConfig(config)
+
 setup_logging()
 logger = logging.getLogger(__name__)
 
@@ -82,16 +81,15 @@ if __name__=="__main__":
                                             doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_3e/qwen-annomi-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT AnnoMI-3e-{w}")"""
-    NUM_PROFILE_REPEATS = 8
     # Cactus
-    for w in [1]:
+    """for w in [1]:
         notify_start_process(f"SFT Cactus-1e-{w}")
         for _ in range(NUM_PROFILE_REPEATS):
             for i in range(EEYORE_NUM_PROFILES):
                 run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_1e_cactus_sft_{w}", 
                                             doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_1e/qwen-cactus-therapist_w{w}",
                                             stopping_detection=True)
-        notify_end_process(f"SFT Cactus-1e-{w}")
+        notify_end_process(f"SFT Cactus-1e-{w}")"""
 
     """for w in [5]:
         notify_start_process(f"SFT Cactus-1e-{w}")
@@ -101,3 +99,15 @@ if __name__=="__main__":
                                             doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_1e/qwen-cactus-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT Cactus-1e-{w}")"""
+    """for w in [5]:
+        notify_start_process(f"SFT Cactus-3e-{w}")
+        for _ in range(NUM_PROFILE_REPEATS):
+            for i in range(EEYORE_NUM_PROFILES):
+                run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_3e_cactus_sft_{w}", 
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_3e/qwen-cactus-therapist_w{w}",
+                                            stopping_detection=True)
+        notify_end_process(f"SFT Cactus-3e-{w}")"""
+    run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=0, output_path=f"data_out/test", 
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_3e/qwen-cactus-therapist_w5",
+                                            stopping_detection=True)
+

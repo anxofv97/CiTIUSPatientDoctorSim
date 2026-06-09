@@ -72,7 +72,7 @@ def initialize_model(model_name, device_map="auto", load_in_8bit=False, offload_
 
 async def homepage(request):
     try:
-        logger.info(f"Received request: {request.method} {request.url}")
+        logger.debug(f"Received request: {request.method} {request.url}")
         logger.debug(f"Request headers: {dict(request.headers)}")
         
         # Parse JSON from request body
@@ -103,7 +103,7 @@ async def homepage(request):
                 logger.warning(f"Invalid message format at index {i}: {msg}")
                 return JSONResponse({"error": f"Invalid message format at index {i}"}, status_code=400)
         
-        logger.info(f"Processing request with {len(messages)} messages")
+        logger.debug(f"Processing request with {len(messages)} messages")
         logger.debug(f"Messages: {messages}")
         
         response_q = asyncio.Queue()
@@ -111,7 +111,7 @@ async def homepage(request):
         logger.debug("Request queued for processing")
         
         output = await response_q.get()
-        logger.info(f"Generated response length: {len(str(output))}")
+        logger.debug(f"Generated response length: {len(str(output))}")
         logger.debug(f"Response: {output}")
         
         # Format response as OpenAI chat completion
@@ -209,14 +209,15 @@ async def server_loop(q):
                 temperature=temperature,
                 top_p=top_p
             )
-            logger.info(f"Model response: {response}")
+            logger.debug(f"Model response: {response}")
             
             # Extract the generated content from the response
             generated_content = response[0]["generated_text"][-1]["content"]
             
             end_time = datetime.now()
             processing_time = (end_time - start_time).total_seconds()
-            logger.info(f"Inference completed in {processing_time:.2f} seconds")
+            logger.info(f"[eeyore] inference completed in {processing_time:.2f} s. Generated tokens: {len(generated_content.split())}")
+            
             
             await response_q.put(generated_content)
             logger.debug("Response sent to queue")
