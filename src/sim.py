@@ -81,23 +81,30 @@ def clean_text(text):
 
     return text
 
-def save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_completed):
+def save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_completed, init_timestamp, end_timestamp, doctor_model: str = None, expand_history: bool = False, stopping_detection: bool = True, doctor_instructions: str = None, patient_sys_prompt: str = None):
     # If output_path doesn't exist, create it
     if not os.path.exists(output_path):
         os.makedirs(output_path)
     # Collect histories and build dump
-    doctor_history_original = doctor.get_conversation_history()
-    doctor_history_trimmed = None
+    doctor_history = doctor.get_conversation_history()
+
+    # Calculate elapsed time
+    time_elapsed = (end_timestamp - init_timestamp).total_seconds()
 
     dump = {
         "profile_id": profile_id,
-        "timestamp": datetime.utcnow().isoformat() + "Z",
-        "max_turns": max_turns,
-        "num_turns_completed": turns_completed,
-        "doctor_model": getattr(doctor.model, "model_name", None),
-        "patient_messages": patient.get_conversation_history(),
-        "doctor_history_original": doctor_history_original,
-        "doctor_history_trimmed": doctor_history_trimmed,
+        "timestamp_init": init_timestamp.isoformat() + "Z",
+        "timestamp_end": end_timestamp.isoformat() + "Z",
+        "time_elapsed_seconds": time_elapsed,
+        "turns_max": max_turns,
+        "turns_completed": turns_completed,
+        "doctor_model": doctor_model or getattr(doctor.model, "model_name", None),
+        "expand_history": expand_history,
+        "stopping_detection": stopping_detection,
+        "instructions_doctor": doctor_instructions,
+        "instructions_patient": patient_sys_prompt,
+        "history_patient": patient.get_conversation_history(),
+        "history_doctor": doctor_history,
     }
 
     fname = f"{output_path}/conversation_profile{profile_id}_{datetime.utcnow().strftime('%Y%m%dT%H%M%S')}"
@@ -105,17 +112,17 @@ def save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_c
     # Write JSON dump
     try:
         with open(fname+".json", "w", encoding="utf-8") as jf:
-            json.dump(dump, jf, ensure_ascii=False, indent=2)
+            json.dump(dump, jf, ensure_ascii=False, indent=2, sort_keys=True)
         logger.info(f"Simulation dumped to {fname}")
     except Exception:
         logger.exception("Failed to write simulation dump")
 
     # Save original conversation to TXT (and keep text in memory)
     try:
-        original_txt = fname + "_original.txt"
+        original_txt = fname + ".txt"
         original_lines = []
         with open(original_txt, "w", encoding="ascii") as f:
-            for msg in dump.get("doctor_history_original", []):
+            for msg in dump.get("doctor_history", []):
                 if msg.get("role") == "system":
                     continue
                 if msg.get("role") == "assistant":
@@ -163,6 +170,9 @@ def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "htt
     doctor.reset_conversation(instructions=doctor_instructions, doctor_greeting=doctor_greeting)
     patient.reset_conversation(instructions=patient_sys_prompt)
 
+    # Capture init timestamp
+    init_timestamp = datetime.utcnow()
+
     # Initial doctor greeting
     doc_msg = doctor_greeting
     logger.info(f"Doctor greeting: {doc_msg.strip()}")
@@ -186,8 +196,11 @@ def run_doctor_patient_conversation(doctor_instructions, patient_url: str = "htt
         if doctor.is_conversation_ended():
             break
 
+    # Capture end timestamp
+    end_timestamp = datetime.utcnow()
+
     logger.info("Conversation ended.")
 
-    save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_completed=i+1)
+    save_simulation(output_path, profile_id, max_turns, patient, doctor, turns_completed=i+1, init_timestamp=init_timestamp, end_timestamp=end_timestamp, doctor_model=doctor_model, expand_history=expand_history, stopping_detection=stopping_detection, doctor_instructions=doctor_instructions, patient_sys_prompt=patient_sys_prompt)
 
     
