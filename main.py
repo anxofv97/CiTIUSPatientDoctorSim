@@ -69,7 +69,7 @@ if __name__=="__main__":
         for _ in range(NUM_PROFILE_REPEATS):
             for i in range(EEYORE_NUM_PROFILES):
                 run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_1e_annomi_sft_{w}", 
-                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_1e/qwen-annomi-therapist_w{w}",
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models/models_1e/qwen-annomi-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT AnnoMI-1e-{w}")
     # AnnoMI SFT - 3 epoch models
@@ -78,7 +78,7 @@ if __name__=="__main__":
         for _ in range(NUM_PROFILE_REPEATS):
             for i in range(EEYORE_NUM_PROFILES):
                 run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_3e_annomi_sft_{w}", 
-                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_3e/qwen-annomi-therapist_w{w}",
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models/models_3e/qwen-annomi-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT AnnoMI-3e-{w}")
     # Cactus SFT - 1 epoch models
@@ -87,7 +87,7 @@ if __name__=="__main__":
         for _ in range(NUM_PROFILE_REPEATS):
             for i in range(EEYORE_NUM_PROFILES):
                 run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_1e_cactus_sft_{w}", 
-                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_1e/qwen-cactus-therapist_w{w}",
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models/models_1e/qwen-cactus-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT Cactus-1e-{w}")
     # Cactus SFT - 3 epoch model
@@ -96,7 +96,7 @@ if __name__=="__main__":
         for _ in range(NUM_PROFILE_REPEATS):
             for i in range(EEYORE_NUM_PROFILES):
                 run_doctor_patient_conversation(max_turns=MAX_TURNS, profile_id=i, output_path=f"data_out/models_3e_cactus_sft_{w}", 
-                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models_3e/qwen-cactus-therapist_w{w}",
+                                            doctor_instructions=DOCTOR_SFT, expand_history=True, doctor_model=f"models/models_3e/qwen-cactus-therapist_w{w}",
                                             stopping_detection=True)
         notify_end_process(f"SFT Cactus-3e-{w}")
 
