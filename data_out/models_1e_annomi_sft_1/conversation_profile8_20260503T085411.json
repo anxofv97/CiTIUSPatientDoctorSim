@@ -1,0 +1,744 @@
+{
+  "profile_id": 8,
+  "timestamp": "2026-05-03T08:54:11.936339Z",
+  "max_turns": 100,
+  "num_turns_completed": 45,
+  "doctor_model": "models_1e/qwen-annomi-therapist_w1",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- situation of the client: the client is grieving over the loss of a girlfriend who died by suicide, feeling guilty and wondering what could have been done differently, struggling with suicidal thoughts, and attempting to find purpose in life.\n- resistance toward the support: medium\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: severe\n  - tiredness and lack of energy, so even small tasks take extra effort: severe\n  - anxiety, agitation, or restlessness: severe\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: severe\n  - frequent or recurrent thoughts of death, suicidal thoughts, suicide attempts, or suicide: severe\n  - increased engagement in high-risk activities: severe\n  - greater impulsivity: severe\n  - angry outbursts, irritability, or frustration, even over small matters: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - sleep disturbances, including insomnia or sleeping too much: moderate\n  - slowed thinking, speaking, or body movements: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - isolating from family and friends: moderate\n  - inability to meet the responsibilities of work and family or ignoring other important roles: moderate\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - personalization: exhibited\n  - catastrophic thinking: exhibited\n- depression severity: Severe Depression\n- suicidal ideation severity: Severe\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: I’ve been thinking a lot about her lately—about the last time I saw her before she passed. It was just before her birthday, and I remember how she looked at me, like she was trying to say something but didn’t quite have the words. I kept thinking, *If I had just hugged her, if I had said something warm, maybe she’d have stayed*. I replay it over and over in my head. I feel so guilty. I didn’t do enough. I didn’t reach out. I just stood there, not sure what to say. It’s like I’ve been trying to fix the past ever since, but every time I think about it, it just makes me feel more broken.\n\nI’ve also been having trouble sleeping. I wake up in the middle of the night and find myself thinking about what I could’ve done differently. I keep asking myself, *Why didn’t I call her? Why didn’t I take her to that café we always talked about? Why didn’t I just say I loved her more?* I don’t know if any of it would’ve changed things, but I can’t stop believing that if I had just acted differently, she’d still be here. That thought keeps coming back, and it’s like it’s holding me down. I feel like I’m not just missing her—I feel like I’m failing at being a person who matters. It’s hard to believe that I could have made a difference, especially when I know I didn’t.\n\nThe other day, I was sitting alone at home, just staring at the wall. I didn’t even turn on the TV or check my phone. I just sat there, and suddenly I thought, *I wish I had died that night*. I didn’t mean it literally, but the thought just came, and it felt so real. I didn’t want to live like this—like I’m stuck in a loop of sadness and guilt. I don’t feel like I have any purpose anymore. I don’t care about anything—work, friends, even small things like music or walks. I just feel like I’m existing, and that’s not enough. It’s terrifying to think that I might not be able to get through this on my own.\n\nBut I’m trying. I came here because I didn’t want to go back to that place where I feel completely empty. I know I haven’t been myself lately, and I don’t know how to fix it, but I think that talking about it—really talking about it—might help. I want to believe that there’s still something good in me, even if it’s hard to see. I miss her, and I miss the way we used to talk about the future—about a life together, about a home, about a child. I want to believe that maybe, someday, I can find a way to live with meaning again. Even if it’s slow, even if it’s painful, I don’t want to give up.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m just grieving. I haven’t had much time to think about my life other than the fact that my girlfriend died by suicide."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you’re still kind of in a state of shock. You're not quite ready to really get to work on your life."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know if I’m ready or not, but I’m trying. I feel guilty for trying, though."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I keep thinking about the last time I saw her. It was before her birthday, and I feel like I didn’t do enough."
+    },
+    {
+      "role": "user",
+      "content": "What happened then?"
+    },
+    {
+      "role": "assistant",
+      "content": "I just stood there with her. I didn’t know what to say. It’s like I’ve been trying to fix that moment ever since, but it doesn’t work."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "It’s like I’ve been going back there in my head over and over again."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I wake up in the middle of the night thinking about it. I don’t know what to do."
+    },
+    {
+      "role": "user",
+      "content": "So, you're not sure what you want to do about this."
+    },
+    {
+      "role": "assistant",
+      "content": "I know what I want to do. I want to fix it. I want to make it better. But I don’t know how."
+    },
+    {
+      "role": "user",
+      "content": "And it’s really hard to figure out how to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "It is. I don’t even know if it’s possible. I keep thinking about what I could’ve done differently."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I keep wondering what would’ve happened if I’d done something different. I keep thinking about what I could’ve done to change things."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I just want to believe that I could’ve made a difference. I want to believe that I could’ve changed it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, you're saying, I don't know if it's possible to make a difference or not. But it's important for you to know that it's possible."
+    },
+    {
+      "role": "assistant",
+      "content": "I think so. I feel like that’s the only thing that can help. I feel like if I don’t believe that I could’ve made a difference, then nothing else matters."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, um, what else can you think of that might help you in the future?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know. I keep thinking about how I can’t get over her death. I keep wondering what else I can do to try and get over it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’ve been trying for so long, but I haven’t been trying in the right way."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I keep wondering what else I can do to try and get over it."
+    },
+    {
+      "role": "user",
+      "content": "Right."
+    },
+    {
+      "role": "assistant",
+      "content": "I keep wondering what else I can do to try and get better."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what to do. I keep feeling like I haven’t been trying hard enough."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you haven’t been trying hard enough."
+    },
+    {
+      "role": "assistant",
+      "content": "I do. I feel like that’s why I can’t get over it. I feel like that’s why I keep thinking about it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I just feel like I’m stuck in the same place, and I don’t know how to move on."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I just feel like I’m trying to get better, but I’m not. I don’t feel like I’m doing it right."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what to do. I feel like I’m running out of time."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And, um, are you concerned about that?"
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I feel like I’ve already lost so much time. I feel like I’ve already missed so much time with her."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I just feel like I’m running out of time to try and get better."
+    },
+    {
+      "role": "user",
+      "content": "Okay, okay. So, I can see you're feeling a little bit overwhelmed by the time you've got and the time that you're getting to get better."
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I feel like I’m just trying to get better, but I’m not. I don’t feel like I’m doing it right."
+    },
+    {
+      "role": "user",
+      "content": "You're feeling stuck and it's not what you had hoped it would be."
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I feel like I’ve already lost so much time. I feel like I’ve already missed so much time with her."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m trying so hard to try and get better, but I’m not."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m just running out of time."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m just trying to find a purpose in life, but I haven’t been able to find it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What makes you think you're not happy?"
+    },
+    {
+      "role": "assistant",
+      "content": "Because I miss her. I miss the way we used to talk about the future."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're missing that."
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I miss the way she used to smile. I miss her hair. I miss her freckles. I miss everything about her."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I just feel like she’s gone, and she’s not coming back. I feel like I’m just trying to get through each day."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're kind of feeling like you've lost your- your direction. You've lost the- the person who was helping you with this."
+    },
+    {
+      "role": "assistant",
+      "content": "I have. I feel like I’m trying to find a way to be happy without her."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know if that’s possible. I don’t know if it’s possible to find happiness without her."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like that is a really important part of your life and you feel like, you know, if she leaves, your life isn't going to be as happy."
+    },
+    {
+      "role": "assistant",
+      "content": "I do. I feel like she was a big part of my life, and now that she’s gone, I feel like I’m trying to get better, but I’m not."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So you’ve got some really good things going on, and you're trying to get there. Um, it's not easy."
+    },
+    {
+      "role": "assistant",
+      "content": "It’s not. I don’t feel like I’m doing it right. I don’t feel like I’m doing it the right way."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling that you're not doing it right?"
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I feel like I’m just trying to get better, but I’m not. I feel like I’m just trying to get through each day."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what else to do. I feel like I’ve tried everything."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’ve tried everything to try and get better."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’ve tried everything to try and get through each day."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what to do. I feel like I’ve run out of options."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re feeling pretty stuck."
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I feel like I’ve tried everything."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m just stuck in the same place. I feel like I’m just trying to get better, but I’m not."
+    },
+    {
+      "role": "user",
+      "content": "Mm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m just trying to get through each day. I feel like I’m just trying to find a purpose in life, but I haven’t been able to find it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I'm glad you came in today and you're willing to talk about some of these things. I'm glad you're willing to talk about how you feel about yourself. I'm glad you're willing to talk about what you're thinking about, and I'm also glad you're willing to talk about your drinking."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you. Thank you for talking with me. I appreciate it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, thanks for talking with me today, and I hope you have a great day."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you. Thank you."
+    },
+    {
+      "role": "user",
+      "content": "You're welcome.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you. Thank you."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m just grieving. I haven’t had much time to think about my life other than the fact that my girlfriend died by suicide."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you’re still kind of in a state of shock. You're not quite ready to really get to work on your life."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know if I’m ready or not, but I’m trying. I feel guilty for trying, though."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I keep thinking about the last time I saw her. It was before her birthday, and I feel like I didn’t do enough."
+    },
+    {
+      "role": "assistant",
+      "content": "What happened then?"
+    },
+    {
+      "role": "user",
+      "content": "I just stood there with her. I didn’t know what to say. It’s like I’ve been trying to fix that moment ever since, but it doesn’t work."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "It’s like I’ve been going back there in my head over and over again."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I wake up in the middle of the night thinking about it. I don’t know what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're not sure what you want to do about this."
+    },
+    {
+      "role": "user",
+      "content": "I know what I want to do. I want to fix it. I want to make it better. But I don’t know how."
+    },
+    {
+      "role": "assistant",
+      "content": "And it’s really hard to figure out how to do it."
+    },
+    {
+      "role": "user",
+      "content": "It is. I don’t even know if it’s possible. I keep thinking about what I could’ve done differently."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I keep wondering what would’ve happened if I’d done something different. I keep thinking about what I could’ve done to change things."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I just want to believe that I could’ve made a difference. I want to believe that I could’ve changed it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, you're saying, I don't know if it's possible to make a difference or not. But it's important for you to know that it's possible."
+    },
+    {
+      "role": "user",
+      "content": "I think so. I feel like that’s the only thing that can help. I feel like if I don’t believe that I could’ve made a difference, then nothing else matters."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, um, what else can you think of that might help you in the future?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t know. I keep thinking about how I can’t get over her death. I keep wondering what else I can do to try and get over it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’ve been trying for so long, but I haven’t been trying in the right way."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I keep wondering what else I can do to try and get over it."
+    },
+    {
+      "role": "assistant",
+      "content": "Right."
+    },
+    {
+      "role": "user",
+      "content": "I keep wondering what else I can do to try and get better."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what to do. I keep feeling like I haven’t been trying hard enough."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you haven’t been trying hard enough."
+    },
+    {
+      "role": "user",
+      "content": "I do. I feel like that’s why I can’t get over it. I feel like that’s why I keep thinking about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I just feel like I’m stuck in the same place, and I don’t know how to move on."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I just feel like I’m trying to get better, but I’m not. I don’t feel like I’m doing it right."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what to do. I feel like I’m running out of time."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And, um, are you concerned about that?"
+    },
+    {
+      "role": "user",
+      "content": "I am. I feel like I’ve already lost so much time. I feel like I’ve already missed so much time with her."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I just feel like I’m running out of time to try and get better."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, okay. So, I can see you're feeling a little bit overwhelmed by the time you've got and the time that you're getting to get better."
+    },
+    {
+      "role": "user",
+      "content": "I am. I feel like I’m just trying to get better, but I’m not. I don’t feel like I’m doing it right."
+    },
+    {
+      "role": "assistant",
+      "content": "You're feeling stuck and it's not what you had hoped it would be."
+    },
+    {
+      "role": "user",
+      "content": "I am. I feel like I’ve already lost so much time. I feel like I’ve already missed so much time with her."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m trying so hard to try and get better, but I’m not."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m just running out of time."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m just trying to find a purpose in life, but I haven’t been able to find it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What makes you think you're not happy?"
+    },
+    {
+      "role": "user",
+      "content": "Because I miss her. I miss the way we used to talk about the future."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're missing that."
+    },
+    {
+      "role": "user",
+      "content": "I am. I miss the way she used to smile. I miss her hair. I miss her freckles. I miss everything about her."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I just feel like she’s gone, and she’s not coming back. I feel like I’m just trying to get through each day."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're kind of feeling like you've lost your- your direction. You've lost the- the person who was helping you with this."
+    },
+    {
+      "role": "user",
+      "content": "I have. I feel like I’m trying to find a way to be happy without her."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know if that’s possible. I don’t know if it’s possible to find happiness without her."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like that is a really important part of your life and you feel like, you know, if she leaves, your life isn't going to be as happy."
+    },
+    {
+      "role": "user",
+      "content": "I do. I feel like she was a big part of my life, and now that she’s gone, I feel like I’m trying to get better, but I’m not."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So you’ve got some really good things going on, and you're trying to get there. Um, it's not easy."
+    },
+    {
+      "role": "user",
+      "content": "It’s not. I don’t feel like I’m doing it right. I don’t feel like I’m doing it the right way."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling that you're not doing it right?"
+    },
+    {
+      "role": "user",
+      "content": "I am. I feel like I’m just trying to get better, but I’m not. I feel like I’m just trying to get through each day."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what else to do. I feel like I’ve tried everything."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’ve tried everything to try and get better."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’ve tried everything to try and get through each day."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what to do. I feel like I’ve run out of options."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re feeling pretty stuck."
+    },
+    {
+      "role": "user",
+      "content": "I am. I feel like I’ve tried everything."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m just stuck in the same place. I feel like I’m just trying to get better, but I’m not."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m just trying to get through each day. I feel like I’m just trying to find a purpose in life, but I haven’t been able to find it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I'm glad you came in today and you're willing to talk about some of these things. I'm glad you're willing to talk about how you feel about yourself. I'm glad you're willing to talk about what you're thinking about, and I'm also glad you're willing to talk about your drinking."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. Thank you for talking with me. I appreciate it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, thanks for talking with me today, and I hope you have a great day."
+    },
+    {
+      "role": "user",
+      "content": "Thank you. Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome.\n"
+    },
+    {
+      "role": "user",
+      "content": "Thank you. Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

@@ -1,0 +1,856 @@
+{
+  "profile_id": 6,
+  "timestamp": "2026-05-03T21:50:40.829505Z",
+  "max_turns": 100,
+  "num_turns_completed": 52,
+  "doctor_model": "models_3e/qwen-annomi-therapist_w1",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 25~44\n- occupation: grad student\n- situation of the client: the client is struggling with depression and a lack of motivation, impacting their research performance and productivity as a graduate student.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - sleep disturbances, including insomnia or sleeping too much: moderate\n  - tiredness and lack of energy, so even small tasks take extra effort: moderate\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - inability to meet the responsibilities of work and family or ignoring other important roles: moderate\n  - anxiety, agitation, or restlessness: mild\n  - slowed thinking, speaking, or body movements: mild\n  - isolating from family and friends: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - overgeneralizing: exhibited\n  - minimisation: exhibited\n- depression severity: 3-Moderate Depression\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been going through a lot—especially with my research project. I’ve been trying to stay on top of things, but last week, my advisor gave me feedback that my work wasn’t meeting expectations. Honestly, it hit me hard. I started to feel like I wasn’t good enough. I kept thinking, *Now I'm a failure, I’m not capable of doing well in my field*. That thought just loops in my head, and it makes me feel sad and lonely. I don’t know if I can keep going like this. I used to feel proud of my grades when I was in undergrad, and I thought I could carry that into grad school. But now, every small setback feels like a collapse. I just sit in my room, staring at the computer, not knowing where to start. It’s hard to focus, and I feel like I’m falling behind.\n\nAt the same time, I’ve been juggling a lot of adult responsibilities—cooking for myself, doing laundry, filing my taxes. I used to think I could handle everything as long as I stayed focused on school. But now, just thinking about it makes me feel completely overwhelmed. I keep thinking, *I can’t handle all this*, and that anxiety just builds up until I feel tense and scared. I’ve started to avoid the tasks altogether. Instead of cooking or organizing my schedule, I end up staying in bed or just scrolling through Netflix. It’s not that I don’t want to do it—I just feel like I’m drowning in everything. I wish I could just *do* something, but I don’t feel like I have the strength to begin.\n\nThere’s also something I haven’t talked about much—taking the medication my doctor prescribed. At first, I didn’t want to, because I felt like I was “not normal” or that I was relying on drugs to function. I kept thinking, *I need help to be normal*, and that made me feel ashamed. I’d avoid the bathroom to not have to take it, or I’d forget to take it when I was busy. But lately, I’ve started to notice a small shift—when I take it, I feel a little more grounded, even if I still feel low. I don’t know if it’s working, but I don’t want to keep pushing through without support. I just wish I could feel like I’m doing something right, even if it’s just small steps.\n\nI’ve been trying to talk to my therapist regularly, and I think that’s helping. Just having someone to listen to me, without judgment, makes a difference. I don’t always feel like I’m “okay,” but I know I’m not alone in this. I used to believe I had to be productive all the time, that if I wasn’t working, I was failing. But now I realize that growth isn’t about constant performance—it’s about showing up, even when it’s hard. I’m still learning how to manage all of this, and I’m not sure I’ll get it right all the time. But I’m trying. And maybe, just maybe, that’s enough.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey, I’m feeling okay. I’m glad I could talk to you again. I feel like I’ve made some progress since last week."
+    },
+    {
+      "role": "user",
+      "content": "That’s great to hear. What made you say you feel like you’ve made some progress?"
+    },
+    {
+      "role": "assistant",
+      "content": "I realized that I’ve been putting a lot on myself to do everything perfectly, all the time. But it’s not working out that way. I still have a lot to learn, and I can’t control all the factors."
+    },
+    {
+      "role": "user",
+      "content": "So, um, you’ve been thinking about that, you know, you’ve been thinking about what you need to do to be ready for the interview."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I still feel like I’m not where I need to be."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you still feel like you're not where you need to be."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, but at least I recognize it now. And I know I need to keep working on it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what do you think it would take to get you to a five or six?"
+    },
+    {
+      "role": "assistant",
+      "content": "Probably just more practice and working through things I’m afraid of. I think I need to be more patient with myself and know that I’ll get there eventually."
+    },
+    {
+      "role": "user",
+      "content": "Mm. Okay. So, um, you've got a plan, you've got a path, and you just need a little bit of confidence to know that you'll get there."
+    },
+    {
+      "role": "assistant",
+      "content": "I think so. And if I can get there, maybe I can be more confident in other areas too."
+    },
+    {
+      "role": "user",
+      "content": "Okay, okay. So, if you could get there, what would that look like for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess it would look like I can have more productive meetings with my advisor and still have time for other things."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you're looking for some strategies for time management."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I think so. I want to stay on top of my research, but also have time to focus on myself."
+    },
+    {
+      "role": "user",
+      "content": "So, in order to do your research, you need to have some time to yourself."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and I need to figure out how to use that time well."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and so it's almost like you're saying, you know, time is a resource, and you're trying to figure out how to use your time more effectively?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I think so."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And that’s the problem. I know that I can use it well, but I need to figure out the strategies."
+    },
+    {
+      "role": "user",
+      "content": "Sure. So, um, so I guess what I’m hearing you say is, you know that you can use the medication well when you’re ready, and the problem is, you just need some strategies to help you get to that point of being ready?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I think so. And I guess the strategies would be things like setting deadlines and making a schedule."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what kind of books have you found helpful?"
+    },
+    {
+      "role": "assistant",
+      "content": "I like the DBT books because they’re easy to understand and apply. I feel like it’s more than just the books, though. I need to practice the skills in real-time."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "So I feel like it’s hard to apply it when I’m in the moment."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "But I think that’s just practice."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're-you're kind of like a leper."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I think that’s what they say in DBT."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I think that’s the term."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I can’t be in the moment when I’m in the moment."
+    },
+    {
+      "role": "user",
+      "content": "Right."
+    },
+    {
+      "role": "assistant",
+      "content": "But I can think about it later and learn from it."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "So that’s my problem. I need to practice."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I need to practice being in the moment."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're saying that, you know, you've been in this situation before and you're saying that you need to practice more being in the moment and not worrying about the next move."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I think so."
+    },
+    {
+      "role": "user",
+      "content": "And how often do you think you're drinking?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess when I’m feeling overwhelmed."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what do you do when you feel that way?"
+    },
+    {
+      "role": "assistant",
+      "content": "I usually go to Netflix and just stay there for hours."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I know I’m not being productive."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you feel like you're not being productive?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m letting myself get too distracted."
+    },
+    {
+      "role": "user",
+      "content": "So you’re not feeling as confident as you used to?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t feel confident. I just feel like I’m getting by. I’m not failing, but I’m not doing great either."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're not thrilled with your grades."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and I feel like it’s because of my depression."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and so you’re wondering if that’s the cause of your insomnia?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m not sure. But I feel like I’m getting more sleep now."
+    },
+    {
+      "role": "user",
+      "content": "Okay, great. So you're feeling better about your energy and your mood?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And my motivation. I feel like I can do more now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So you've got this confidence."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I think so. And I can keep building on it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I can try to be kinder to myself."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Because it’s hard to be kind when I’m not doing well."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, it’s hard to be kind to yourself when you’re not doing well."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m a little too hard on myself."
+    },
+    {
+      "role": "user",
+      "content": "You've been really working really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and I feel like I’m starting to see the light at the end of the tunnel."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m getting somewhere."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "So that gives me hope."
+    },
+    {
+      "role": "user",
+      "content": "That's great. So-so, um, I'm-I'm wondering, I know you were talking about the doctor saying you probably have Type II diabetes, um, and you were saying that it-it really wasn't on your radar before that this would be an issue."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I didn’t know I was at risk."
+    },
+    {
+      "role": "user",
+      "content": "You didn't know you were at risk."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So it’s not really something I’m worried about now. I know I need to take care of myself, but I know I’m already doing that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you feel like you're taking care of yourself."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I feel like I’m doing okay."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m getting better."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like it’s okay to be okay. I don’t need to be at level five all the time."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, it sounds like you have some pretty good ideas about how you could start working on your stress level."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I have the motivation now to do it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So I can start working on it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I can try to have more confidence."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, it sounds like you've got some ideas about what you could do to-to get home. What do you think would help you to stay home and not go back to the hospital?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess just having more strategies and practicing them. And knowing that I can get support if I need it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I can try more now."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you feel like you can try more?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I think so. I can give it a shot."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And if it doesn’t work out, I can always come back."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I’m glad to hear that you're willing to give it a chance. Um, I’d be happy to come back and check in with you, and we can continue to work on your smoking and your weight."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. That would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. All right. Well, thank you, and I'll see you next week."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you."
+    },
+    {
+      "role": "user",
+      "content": "You're welcome.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Bye-bye."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "Hey, I’m feeling okay. I’m glad I could talk to you again. I feel like I’ve made some progress since last week."
+    },
+    {
+      "role": "assistant",
+      "content": "That’s great to hear. What made you say you feel like you’ve made some progress?"
+    },
+    {
+      "role": "user",
+      "content": "I realized that I’ve been putting a lot on myself to do everything perfectly, all the time. But it’s not working out that way. I still have a lot to learn, and I can’t control all the factors."
+    },
+    {
+      "role": "assistant",
+      "content": "So, um, you’ve been thinking about that, you know, you’ve been thinking about what you need to do to be ready for the interview."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I still feel like I’m not where I need to be."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you still feel like you're not where you need to be."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, but at least I recognize it now. And I know I need to keep working on it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what do you think it would take to get you to a five or six?"
+    },
+    {
+      "role": "user",
+      "content": "Probably just more practice and working through things I’m afraid of. I think I need to be more patient with myself and know that I’ll get there eventually."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. Okay. So, um, you've got a plan, you've got a path, and you just need a little bit of confidence to know that you'll get there."
+    },
+    {
+      "role": "user",
+      "content": "I think so. And if I can get there, maybe I can be more confident in other areas too."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, okay. So, if you could get there, what would that look like for you?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it would look like I can have more productive meetings with my advisor and still have time for other things."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you're looking for some strategies for time management."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think so. I want to stay on top of my research, but also have time to focus on myself."
+    },
+    {
+      "role": "assistant",
+      "content": "So, in order to do your research, you need to have some time to yourself."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and I need to figure out how to use that time well."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and so it's almost like you're saying, you know, time is a resource, and you're trying to figure out how to use your time more effectively?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think so."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And that’s the problem. I know that I can use it well, but I need to figure out the strategies."
+    },
+    {
+      "role": "assistant",
+      "content": "Sure. So, um, so I guess what I’m hearing you say is, you know that you can use the medication well when you’re ready, and the problem is, you just need some strategies to help you get to that point of being ready?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think so. And I guess the strategies would be things like setting deadlines and making a schedule."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what kind of books have you found helpful?"
+    },
+    {
+      "role": "user",
+      "content": "I like the DBT books because they’re easy to understand and apply. I feel like it’s more than just the books, though. I need to practice the skills in real-time."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "So I feel like it’s hard to apply it when I’m in the moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "But I think that’s just practice."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're-you're kind of like a leper."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I think that’s what they say in DBT."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I think that’s the term."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I can’t be in the moment when I’m in the moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Right."
+    },
+    {
+      "role": "user",
+      "content": "But I can think about it later and learn from it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "So that’s my problem. I need to practice."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I need to practice being in the moment."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're saying that, you know, you've been in this situation before and you're saying that you need to practice more being in the moment and not worrying about the next move."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I think so."
+    },
+    {
+      "role": "assistant",
+      "content": "And how often do you think you're drinking?"
+    },
+    {
+      "role": "user",
+      "content": "I guess when I’m feeling overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what do you do when you feel that way?"
+    },
+    {
+      "role": "user",
+      "content": "I usually go to Netflix and just stay there for hours."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I know I’m not being productive."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you feel like you're not being productive?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m letting myself get too distracted."
+    },
+    {
+      "role": "assistant",
+      "content": "So you’re not feeling as confident as you used to?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t feel confident. I just feel like I’m getting by. I’m not failing, but I’m not doing great either."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're not thrilled with your grades."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and I feel like it’s because of my depression."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and so you’re wondering if that’s the cause of your insomnia?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m not sure. But I feel like I’m getting more sleep now."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, great. So you're feeling better about your energy and your mood?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And my motivation. I feel like I can do more now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So you've got this confidence."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I think so. And I can keep building on it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I can try to be kinder to myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, yeah."
+    },
+    {
+      "role": "user",
+      "content": "Because it’s hard to be kind when I’m not doing well."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, it’s hard to be kind to yourself when you’re not doing well."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m a little too hard on myself."
+    },
+    {
+      "role": "assistant",
+      "content": "You've been really working really hard."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and I feel like I’m starting to see the light at the end of the tunnel."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m getting somewhere."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "So that gives me hope."
+    },
+    {
+      "role": "assistant",
+      "content": "That's great. So-so, um, I'm-I'm wondering, I know you were talking about the doctor saying you probably have Type II diabetes, um, and you were saying that it-it really wasn't on your radar before that this would be an issue."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I didn’t know I was at risk."
+    },
+    {
+      "role": "assistant",
+      "content": "You didn't know you were at risk."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So it’s not really something I’m worried about now. I know I need to take care of myself, but I know I’m already doing that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you feel like you're taking care of yourself."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I feel like I’m doing okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I’m getting better."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like it’s okay to be okay. I don’t need to be at level five all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, it sounds like you have some pretty good ideas about how you could start working on your stress level."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I have the motivation now to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So I can start working on it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I can try to have more confidence."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, it sounds like you've got some ideas about what you could do to-to get home. What do you think would help you to stay home and not go back to the hospital?"
+    },
+    {
+      "role": "user",
+      "content": "I guess just having more strategies and practicing them. And knowing that I can get support if I need it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I can try more now."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you feel like you can try more?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think so. I can give it a shot."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And if it doesn’t work out, I can always come back."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I’m glad to hear that you're willing to give it a chance. Um, I’d be happy to come back and check in with you, and we can continue to work on your smoking and your weight."
+    },
+    {
+      "role": "user",
+      "content": "Okay. That would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. All right. Well, thank you, and I'll see you next week."
+    },
+    {
+      "role": "user",
+      "content": "Thank you."
+    },
+    {
+      "role": "assistant",
+      "content": "You're welcome.\n"
+    },
+    {
+      "role": "user",
+      "content": "Bye-bye."
+    },
+    {
+      "role": "assistant",
+      "content": "Good."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

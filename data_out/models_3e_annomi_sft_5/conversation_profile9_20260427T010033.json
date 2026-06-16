@@ -1,0 +1,1624 @@
+{
+  "profile_id": 9,
+  "timestamp": "2026-04-27T01:00:33.622295Z",
+  "max_turns": 100,
+  "num_turns_completed": 100,
+  "doctor_model": "models_3e/qwen-annomi-therapist_w5",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 0~24\n- occupation: student\n- situation of the client: the client is experiencing severe depression and self-harm urges triggered by an impending graduation from college, fear of moving back to a toxic home environment, and financial dependence on their family. the client feels trapped and unsupported without their college friends.\n- resistance toward the support: medium\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: severe\n  - anxiety, agitation, or restlessness: severe\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: severe\n  - trouble thinking, concentrating, making decisions, and remembering things: severe\n  - frequent or recurrent thoughts of death, suicidal thoughts, suicide attempts, or suicide: severe\n  - inability to meet the responsibilities of work and family or ignoring other important roles: severe\n  - angry outbursts, irritability, or frustration, even over small matters: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - sleep disturbances, including insomnia or sleeping too much: moderate\n  - tiredness and lack of energy, so even small tasks take extra effort: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - greater impulsivity: moderate\n  - isolating from family and friends: moderate\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - overgeneralizing: exhibited\n  - personalization: exhibited\n  - catastrophic thinking: exhibited\n  - minimisation: exhibited\n- depression severity: Severe Depression. The client expresses severe feelings of hopelessness and worthlessness, frequent thoughts of self-harm, and a pervasive inability to function effectively.\n- suicidal ideation severity: Severe suicidal ideation. The client frequently thinks about death and expresses a strong desire to die, influenced by impending life changes and toxic family dynamics, though they lack a clear plan.\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been going back and forth between trying to stay grounded and feeling like I’m drowning. Every time I think about graduation, my chest tightens like a knot I can’t pull loose. I keep imagining walking back into that house—my mom’s eyes narrowing, her old words playing in my head: *“You’re just weak. You should be grateful for what you have.”* It’s like she’s always been waiting for me to break, and now I’m afraid that once I leave campus, I’ll finally give in to everything I’ve been trying to suppress. I don’t even know if I could survive the silence after the support group ends. Abraham has been such a constant in my life—someone who doesn’t just listen, but *sees* me. He knows when I’m falling apart and just shows up with a coffee or a quiet space to sit. That’s something I’ve never had before. But I keep thinking that after graduation, he’ll move away, or I’ll have to go home, and I’ll be alone again.\n\nI’ve started having thoughts about cutting again, especially when I’m alone. It feels like the only thing that gives me a moment of control—like I can *do* something, even if it’s just a small thing. But the more I do it, the more I feel like I’m just confirming what I already believe: that I’m a burden, that I can’t fix myself, and that no one really wants to help me. I remember when I first started college, I thought I could change things—maybe I’d find a way to be strong, to prove myself. But every time I tried, it just felt like I was falling further into the same patterns. I’m not sure how long I can keep hiding my sadness from my parents. I know they don’t understand, and I know they’ve used my pain before to manipulate me. The thought of them knowing how I really feel makes me feel so scared—like I’ll be punished, or worse, like I’ll be made to feel guilty for needing help. I don’t want to be the person who brings them pain. So I keep quiet. I keep cutting. I keep pretending everything is okay.\n\nI also can’t stop thinking about Abraham and how much he means to me. He’s not just a friend—he’s a safe place. When I’m with him, I feel seen, and I can cry without fear. I’ve told him I don’t know how I’d survive without him, especially after graduation. And when I say that, he just holds me and says, *“You’re not alone, and you don’t have to carry this all by yourself.”* That small thing—his quiet strength—helps me breathe. But when I imagine us parting ways, it feels like a physical wound opening. I don’t know how I’d survive the silence, the distance, the absence of someone who knows my pain without judgment. I keep thinking about how I’ll be alone again, and how I’ll have to face my mother, my old patterns, and the idea that I have to be strong just to keep everyone happy. It all feels so overwhelming, like I’m trapped in a loop I can’t escape.\n\nSometimes I wonder if I’m just broken, if I’ll ever truly heal. I don’t know if I can change the way I see myself—how I believe I’m worthless, how I feel helpless. But I do know that Abraham has helped me realize that I don’t have to carry it all. I don’t have to hide. And maybe, just maybe, I can start to trust that even when things feel impossible, there’s still a way forward. I’m scared, yes. I’m sad. I’m still hurting. But I’m trying—not just to survive, but to find a way to live with more peace, more honesty, and more hope. And I want to keep trying, even when it feels like I’m just making the same mistakes over and over.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m not feeling great today. I’m trying to process the fact that I’m graduating from college in less than two months, and that scares me because I know it means I’ll have to move back into my mom’s house and be away from my college friends"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you need to be doing something different, and you're not sure where that could take you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel trapped. I’m scared of what I’ll do when I’m home, especially since my mom’s behavior has been getting more and more toxic"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you need to find some sort of new direction, and you're not sure where that could take you?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’ve been trying to fix things, but I can’t seem to make any progress"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you're stuck, but you also feel like you need to make some changes?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, but I don’t know what changes to make. Every time I think about the future, my mind goes blank"
+    },
+    {
+      "role": "user",
+      "content": "So, you're not sure what you want your life to look like in the next five years?"
+    },
+    {
+      "role": "assistant",
+      "content": "Not really. I don’t even know what I want my life to look like in the next five minutes. I feel so lost"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you're not sure what you want in the next five minutes, five years, and five decades?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I feel lost all the time. I feel like I have no control over anything in my life"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you don’t have any control over your life, and you're not sure what you want for the future?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just drifting along, and I don’t know how to anchor myself"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So, you feel like you’re drifting, you feel like you’re lost, you feel like you don’t have control over your life, and you're not sure what you want in the next five minutes, five years, or five decades?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like everything is just falling apart around me, and I have no way to stop it"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So, you feel like things are falling apart, you feel like you're in crisis, and you're not sure how to respond to that?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’ve been in crisis for so long that I don’t know what normal feels like anymore"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’ve been in crisis so long that you don’t even know what normal looks like anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’ve grown up in a constant state of fear and anxiety, and I’m not sure how to change that"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’ve grown up with a lot of anxiety, and right now, you're experiencing a lot of anxiety, and you're not sure how to change that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m trapped in my own mind, and I don’t know how to escape"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you're trapped in your own mind."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you're just going through the motions, and you don't feel like you're really living."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m stuck in a never-ending cycle of pain and fear, and I don’t know how to escape"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you're stuck in a cycle of pain and fear, and you don't know how to escape."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel so alone and scared all the time, and I don’t know how to find help"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel so alone and scared, and you don't know how to find help."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like everyone else has their own problems, and they don’t have time to deal with mine"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like other people are busy with their own lives, and you don’t have time to deal with yours."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like everyone is just too busy to notice that I’m falling apart"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like no one sees you falling apart, and you're just alone."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just a burden to everyone around me, and that no one really wants to help me"
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you’re a burden. You feel like people don’t want to help you."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like everyone else is just trying to survive their own problems, and they don’t have the emotional bandwidth to deal with mine"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like they have their own issues. They're dealing with their own stuff, and you feel like you're on top of a mountain, and no one can help you?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m so alone that I have no one to turn to when things start feeling unbearable"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you’re alone. You feel like you have no one to turn to."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like the weight of the world is on my shoulders, and I have no one to help me carry it"
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, it sounds like you’re-you’re feeling pretty low right now, and you feel like you need some sort of plan. You need some support. You need to talk to someone."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like if I had a plan, or someone to talk to, or someone to help me carry the weight of the world, I’d feel so much better"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what do you think would help you feel better?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I had a plan, or someone to talk to, or someone to help me carry the weight of the world, I’d feel so much better"
+    },
+    {
+      "role": "user",
+      "content": "So, what do you think would help you get started in creating that plan?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I had someone to talk to, I could make a plan and figure out what to do"
+    },
+    {
+      "role": "user",
+      "content": "So, having someone to talk to would be a really big step in helping you feel better about the situation?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I think that would really help. I’m just not sure who would be willing to listen"
+    },
+    {
+      "role": "user",
+      "content": "So, what do you think would happen if you talked to someone about this?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think they might understand that I’m not okay, and they might be able to help me find a plan"
+    },
+    {
+      "role": "user",
+      "content": "What would you like to do next?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I could talk to someone who understands what I’m going through, it would help me make a plan"
+    },
+    {
+      "role": "user",
+      "content": "How can I help you get to that point?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think you can help me identify who would be good to talk to, or maybe you could talk to me yourself"
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I just feel so lost all the time, and I don’t know how to find help"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you’ve noticed that things are not going the way you wanted them to?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you’ve noticed that things are not going as you'd like them to, and you feel like you're not in control of your life?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you feel like you're kind of stuck, that things will never get better?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you feel like you're just going through the motions. You're not really living?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you feel like you're kind of stuck, that things will never get better?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're just kind of stuck in this rut, this rut you've been in for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not in control, and that you're not sure how to make changes to your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're kind of just waiting for the best in your life to come along, but you're not quite sure when that's going to happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're going through the motions, but you don't feel like you're really living."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not quite sure when that's going to happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not in control of your life, and you feel like you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're feeling pretty stuck right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're feeling pretty sad right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you’re at a crossroads."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you’re just sort of hoping things will get better."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're hoping things will get better, but you also feel like you're not in control of your life and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. And you're just hoping that things will get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So let me summarize what you told me, and then maybe we can talk about what you think about that. So you've been in the system a long time, you've been in and out of different places, and it sounds like you've done time. Um, you've been sentenced and convicted of a felony conviction, and you've been in prison, you've been on probation, and it sounds like you feel like you've lost control of your life. You're not sure how to change, and you feel like you're just waiting for things to get better."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. Um, what is it that you would like to happen next?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I could find a way to control my own life, I’d feel a lot better. I think I’d be able to make a plan for my future"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you know what you want, but you're just not sure how to get there."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So what do you think you need to do next to feel more in control?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I could talk to someone who understands what I’m going through, I could make a plan"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like talking to someone would help you get things in order?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I think it would help me understand what I need to do to make a change"
+    },
+    {
+      "role": "user",
+      "content": "So what kind of things would help you feel more in control?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think if I had someone to talk to, I’d feel a lot better. I think I could start making a plan for my future"
+    },
+    {
+      "role": "user",
+      "content": "So what do you think you need to do next?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think I need to find someone who can listen to me and help me make a plan"
+    },
+    {
+      "role": "user",
+      "content": "How could you go about doing that?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think I could talk to my friends, or I could look for someone online. I think it would help to have someone who understands what I’m going through"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you’re really ready to take steps to make a plan to deal with your substance use."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you’ve been experiencing a lot lately."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you’re feeling pretty overwhelmed right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you’re feeling pretty sad."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you're feeling pretty hopeless right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "You said you’ve been feeling this way for a while, and that you’ve noticed that you’ve been drinking more."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you've been trying to cope with some stress, and that you're feeling like your drinking is making things worse instead of better."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "You’ve noticed that you’ve been drinking more, but you're not sure if it's helping."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "You're feeling pretty down, and you feel like you're stuck."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "You're feeling pretty hopeless."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're stuck in this rut, and you're feeling pretty down about it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "You’re feeling like you’re stuck in a rut. You’re feeling pretty low, and you're feeling like you're just waiting for things to get better?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you're feeling pretty down about where things are right now, and you're feeling like you're stuck in a rut."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "So, you're feeling like things aren't really going the way that you want them to."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you're feeling like you need some direction in your life, and you feel like you need to make some changes."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "So, you're feeling a little bit discouraged right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you're feeling like you're at a crossroads in your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "user",
+      "content": "So, you're feeling like you need to make some changes in your life to feel more fulfilled."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "So, you're feeling like you need some guidance in order to make some of these changes in your life?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I’m not feeling great today. I’m trying to process the fact that I’m graduating from college in less than two months, and that scares me because I know it means I’ll have to move back into my mom’s house and be away from my college friends"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you need to be doing something different, and you're not sure where that could take you?"
+    },
+    {
+      "role": "user",
+      "content": "I feel trapped. I’m scared of what I’ll do when I’m home, especially since my mom’s behavior has been getting more and more toxic"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you need to find some sort of new direction, and you're not sure where that could take you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’ve been trying to fix things, but I can’t seem to make any progress"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you're stuck, but you also feel like you need to make some changes?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, but I don’t know what changes to make. Every time I think about the future, my mind goes blank"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're not sure what you want your life to look like in the next five years?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I don’t even know what I want my life to look like in the next five minutes. I feel so lost"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you're not sure what you want in the next five minutes, five years, and five decades?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I feel lost all the time. I feel like I have no control over anything in my life"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you don’t have any control over your life, and you're not sure what you want for the future?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just drifting along, and I don’t know how to anchor myself"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So, you feel like you’re drifting, you feel like you’re lost, you feel like you don’t have control over your life, and you're not sure what you want in the next five minutes, five years, or five decades?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like everything is just falling apart around me, and I have no way to stop it"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So, you feel like things are falling apart, you feel like you're in crisis, and you're not sure how to respond to that?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’ve been in crisis for so long that I don’t know what normal feels like anymore"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’ve been in crisis so long that you don’t even know what normal looks like anymore."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’ve grown up in a constant state of fear and anxiety, and I’m not sure how to change that"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’ve grown up with a lot of anxiety, and right now, you're experiencing a lot of anxiety, and you're not sure how to change that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m trapped in my own mind, and I don’t know how to escape"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you're trapped in your own mind."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you're just going through the motions, and you don't feel like you're really living."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m stuck in a never-ending cycle of pain and fear, and I don’t know how to escape"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you're stuck in a cycle of pain and fear, and you don't know how to escape."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel so alone and scared all the time, and I don’t know how to find help"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel so alone and scared, and you don't know how to find help."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like everyone else has their own problems, and they don’t have time to deal with mine"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like other people are busy with their own lives, and you don’t have time to deal with yours."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like everyone is just too busy to notice that I’m falling apart"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like no one sees you falling apart, and you're just alone."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just a burden to everyone around me, and that no one really wants to help me"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you’re a burden. You feel like people don’t want to help you."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like everyone else is just trying to survive their own problems, and they don’t have the emotional bandwidth to deal with mine"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like they have their own issues. They're dealing with their own stuff, and you feel like you're on top of a mountain, and no one can help you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m so alone that I have no one to turn to when things start feeling unbearable"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you’re alone. You feel like you have no one to turn to."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like the weight of the world is on my shoulders, and I have no one to help me carry it"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, it sounds like you’re-you’re feeling pretty low right now, and you feel like you need some sort of plan. You need some support. You need to talk to someone."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like if I had a plan, or someone to talk to, or someone to help me carry the weight of the world, I’d feel so much better"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what do you think would help you feel better?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I had a plan, or someone to talk to, or someone to help me carry the weight of the world, I’d feel so much better"
+    },
+    {
+      "role": "assistant",
+      "content": "So, what do you think would help you get started in creating that plan?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I had someone to talk to, I could make a plan and figure out what to do"
+    },
+    {
+      "role": "assistant",
+      "content": "So, having someone to talk to would be a really big step in helping you feel better about the situation?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I think that would really help. I’m just not sure who would be willing to listen"
+    },
+    {
+      "role": "assistant",
+      "content": "So, what do you think would happen if you talked to someone about this?"
+    },
+    {
+      "role": "user",
+      "content": "I think they might understand that I’m not okay, and they might be able to help me find a plan"
+    },
+    {
+      "role": "assistant",
+      "content": "What would you like to do next?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I could talk to someone who understands what I’m going through, it would help me make a plan"
+    },
+    {
+      "role": "assistant",
+      "content": "How can I help you get to that point?"
+    },
+    {
+      "role": "user",
+      "content": "I think you can help me identify who would be good to talk to, or maybe you could talk to me yourself"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I just feel so lost all the time, and I don’t know how to find help"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you’ve noticed that things are not going the way you wanted them to?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you’ve noticed that things are not going as you'd like them to, and you feel like you're not in control of your life?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you feel like you're kind of stuck, that things will never get better?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you feel like you're just going through the motions. You're not really living?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you feel like you're kind of stuck, that things will never get better?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're just kind of stuck in this rut, this rut you've been in for a while."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not in control, and that you're not sure how to make changes to your life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're kind of just waiting for the best in your life to come along, but you're not quite sure when that's going to happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're going through the motions, but you don't feel like you're really living."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not quite sure when that's going to happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not in control of your life, and you feel like you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're feeling pretty stuck right now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're feeling pretty sad right now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you’re at a crossroads."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you’re just sort of hoping things will get better."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're hoping things will get better, but you also feel like you're not in control of your life and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're just hoping."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And you're just hoping that things will get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not in control of your life, and you don't know how to change."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're just waiting for things to get better, but you're not sure when that will happen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So let me summarize what you told me, and then maybe we can talk about what you think about that. So you've been in the system a long time, you've been in and out of different places, and it sounds like you've done time. Um, you've been sentenced and convicted of a felony conviction, and you've been in prison, you've been on probation, and it sounds like you feel like you've lost control of your life. You're not sure how to change, and you feel like you're just waiting for things to get better."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Um, what is it that you would like to happen next?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I could find a way to control my own life, I’d feel a lot better. I think I’d be able to make a plan for my future"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you know what you want, but you're just not sure how to get there."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So what do you think you need to do next to feel more in control?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I could talk to someone who understands what I’m going through, I could make a plan"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like talking to someone would help you get things in order?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I think it would help me understand what I need to do to make a change"
+    },
+    {
+      "role": "assistant",
+      "content": "So what kind of things would help you feel more in control?"
+    },
+    {
+      "role": "user",
+      "content": "I think if I had someone to talk to, I’d feel a lot better. I think I could start making a plan for my future"
+    },
+    {
+      "role": "assistant",
+      "content": "So what do you think you need to do next?"
+    },
+    {
+      "role": "user",
+      "content": "I think I need to find someone who can listen to me and help me make a plan"
+    },
+    {
+      "role": "assistant",
+      "content": "How could you go about doing that?"
+    },
+    {
+      "role": "user",
+      "content": "I think I could talk to my friends, or I could look for someone online. I think it would help to have someone who understands what I’m going through"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you’re really ready to take steps to make a plan to deal with your substance use."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you’ve been experiencing a lot lately."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you’re feeling pretty overwhelmed right now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you’re feeling pretty sad."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're feeling pretty hopeless right now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "You said you’ve been feeling this way for a while, and that you’ve noticed that you’ve been drinking more."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you've been trying to cope with some stress, and that you're feeling like your drinking is making things worse instead of better."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "You’ve noticed that you’ve been drinking more, but you're not sure if it's helping."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "You're feeling pretty down, and you feel like you're stuck."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "You're feeling pretty hopeless."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're stuck in this rut, and you're feeling pretty down about it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "You’re feeling like you’re stuck in a rut. You’re feeling pretty low, and you're feeling like you're just waiting for things to get better?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you're feeling pretty down about where things are right now, and you're feeling like you're stuck in a rut."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're feeling like things aren't really going the way that you want them to."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you're feeling like you need some direction in your life, and you feel like you need to make some changes."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're feeling a little bit discouraged right now."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you're feeling like you're at a crossroads in your life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just going through the motions every day, and I’m not really living at all"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're feeling like you need to make some changes in your life to feel more fulfilled."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're feeling like you need some guidance in order to make some of these changes in your life?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m just waiting for things to get better, but I don’t know when that will happen"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not in control of my life, and that I don’t know how to change"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're stuck in a rut, and you're not sure what's going to change, and you're not sure what you can do about it."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

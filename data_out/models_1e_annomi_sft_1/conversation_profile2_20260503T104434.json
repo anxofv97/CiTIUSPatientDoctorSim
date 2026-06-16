@@ -1,0 +1,1624 @@
+{
+  "profile_id": 2,
+  "timestamp": "2026-05-03T10:44:34.290450Z",
+  "max_turns": 100,
+  "num_turns_completed": 100,
+  "doctor_model": "models_1e/qwen-annomi-therapist_w1",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- gender: female\n- age: 25~44\n- marital status: not married\n- situation of the client: the client recently discovered that her boyfriend cheated on her with her best friend, and she is struggling with whether to continue the relationship given the upcoming engagement plans.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - angry outbursts, irritability, or frustration, even over small matters: moderate\n  - anxiety, agitation, or restlessness: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: mild\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: mild\n  - becoming withdrawn, negative, or detached: mild\n  - greater impulsivity: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - catastrophic thinking: exhibited\n- depression severity: 2-Mild Depression. The client exhibits moderate sadness and mood disturbance, but there are no signs of severe depression.\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been going through a lot of emotional turmoil, especially around the relationship with my boyfriend. We’ve been together for almost five years, and I always thought we were building something solid—something that would lead to a future with a wedding, a home, and a life full of plans. I’ve had this strong sense of control over my life for a long time, like everything from my schedule to my decisions about who I’m with has to be perfectly organized. That’s why I never considered anyone else—because I believed that if I stayed focused on my plans, I’d stay safe and in a stable relationship.  \n\nBut then I found out about the affair—my best friend was involved with my boyfriend, and it wasn’t just a one-time thing. I discovered it a year ago, and at first, I couldn’t believe it. I felt like the ground had cracked beneath me. I thought, *Everything I’ve ever believed about love and loyalty is broken.* I started questioning if I’d ever really been seen or truly valued, and now I wonder if I’m just not good enough to be loved in a real, lasting way. That’s what makes me feel so angry and sad—like I’ve been walking through life with this perfect plan, only to realize it’s all built on something false.  \n\nThis week, my boyfriend asked if my best friend could be part of their wedding. I was so stunned. It felt like a direct insult to everything I’ve been trying to protect in my life. I thought, *If he’s willing to include someone who betrayed me, how can I trust that he’s truly committed to me?* I didn’t want to say anything at first—just sat in silence, trying to keep my emotions in check. But when I finally shared it with the therapist, I realized how much that one question shook my sense of security. I don’t know if I can go forward with this relationship anymore, especially when I feel like I’m losing control of the story I thought I had.  \n\nNow, I’ve been thinking about another man who’s been interested in me for over a year. He’s kind, respectful, and actually seems to understand what I value—like clean routines, clear boundaries, and a life that’s structured and safe. I don’t know why I never considered him before. I keep thinking, *Maybe I wasted so much time with someone who didn’t truly see me.* But the fear is overwhelming—what if I’m just not good enough? What if I’m unlovable? I don’t want to break up with my boyfriend, but I also can’t keep pretending that everything is fine. I need to find a way to feel safe again—maybe even in a new relationship—without losing myself in the process.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "Hi, thanks for the warm welcome. I am feeling a bit down, but I think I have something important I need to discuss."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, so, what's on your mind?"
+    },
+    {
+      "role": "assistant",
+      "content": "Well, I recently discovered that my boyfriend cheated on me with my best friend, and I am not sure if I should stay with him."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "The weird thing is, he asked me to marry him recently, but now that I think about it, he asked my best friend to be part of our wedding, which really hurts."
+    },
+    {
+      "role": "user",
+      "content": "So you're not sure about the relationship?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like it’s too soon to decide. I need to think about what I truly want and if I feel safe with this person."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you're not ready to make a decision right now. So, what do you need to do to get ready to make that decision?"
+    },
+    {
+      "role": "assistant",
+      "content": "I need to talk to someone who understands and can help me figure this out. I don’t feel like I’m in control of the story I thought I had."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I think you're right. It's very hard to be in control when you're in a place like this. It's very hard to know what's going to happen. I can tell you from experience that I've been in this hospital many times and it's hard to be in control."
+    },
+    {
+      "role": "assistant",
+      "content": "I think that’s why I’m scared to break up with him. I feel like it will be even harder to let go of something that feels comfortable."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, it sounds like you’ve kind of made a decision, um, to stay with him and to stay in the relationship, even though it’s not working out. And you're feeling like you don't want to do that because it would be really hard to let go of something that feels comfortable."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that’s true. I don’t know if I can let go."
+    },
+    {
+      "role": "user",
+      "content": "It’s okay to feel that way. It’s not a good idea to be drinking this much."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I know. I’m just so sad about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So you’re really feeling like you’re not quite where you want to be right now, and you want to be somewhere else?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. I feel like I’m stuck and I don’t know how to get to where I want to go."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I know this other guy who’s interested in me and I wonder if I’m settling or just scared to move forward."
+    },
+    {
+      "role": "user",
+      "content": "So, you're scared to move forward?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know if I’m scared or if I’m just not sure what to do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t want to make the wrong choice."
+    },
+    {
+      "role": "user",
+      "content": "So you're concerned about making the wrong choice."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, definitely. It’s a bit scary."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m just not sure what to do or who to turn to."
+    },
+    {
+      "role": "user",
+      "content": "So, you feel that you are in a bit of a pickle at the moment?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I need some help deciding what to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, tell me, what are some of the things that you think are making it hard for you to quit?"
+    },
+    {
+      "role": "assistant",
+      "content": "It’s just hard to let go. I know I deserve better, but I don’t know how to get there."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, um, you know, you've had a lot of experience with, um, the meth, and you know it's not safe for you. You've been to rehab and you know that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I know it’s not good for me, but I still feel like I have no control over this situation."
+    },
+    {
+      "role": "user",
+      "content": "Mm. So you're feeling like you don't have a lot of control over it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I don’t. I need to think about what I truly want."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, I'm hearing that you've been thinking about this and you're not sure what you want."
+    },
+    {
+      "role": "assistant",
+      "content": "That’s correct. I feel like I’ve been living in someone else’s story."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to take control of my own story and decide what I want."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it's like you've been going through some of those changes and you're not quite sure how to take control."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that’s exactly what I mean. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, it sounds like your story is changing and that you feel like you're not in control."
+    },
+    {
+      "role": "assistant",
+      "content": "That’s true. I’m not in control. I feel like I’m living someone else’s dream."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, what would be your dream?"
+    },
+    {
+      "role": "assistant",
+      "content": "I want to have someone who truly sees me and respects me. I want to be valued and loved."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, you've been talking about what you need in a partner, and what you've found is that you don't feel that you've met those needs."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, and I don’t know if it’s because I was focusing on the wrong things or if I was just not being seen."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like there are other guys out there who actually do see me."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what to do. I’m just not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what you're saying is that you don't know what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I don’t. I just don’t know how to get to where I want to go."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I know what I want, but I don’t know how to get there."
+    },
+    {
+      "role": "user",
+      "content": "Mm."
+    },
+    {
+      "role": "assistant",
+      "content": "I need some help figuring this out. I feel lost."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m not in control of my own life."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you have a lot of reasons to quit smoking."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I just don’t know how to do it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're not confident in your ability to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I’m not. I feel lost and scared."
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you're lost and scared?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, definitely. I don’t know what to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need someone to help me through this."
+    },
+    {
+      "role": "user",
+      "content": "So, you feel like you need someone to help you through this process of getting to where you want to go?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I’m just not sure who or where to turn to."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, who do you think might be able to help you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know. I just don’t know what to do or who to turn to."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, it's like you don't know what to do or who to turn to."
+    },
+    {
+      "role": "assistant",
+      "content": "That’s right. I’m just lost and scared."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. You’ve got some other stuff going on."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, there is other stuff going on, but I think this is the biggest issue."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so it sounds like you're really concerned about your son's future."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I want him to have a good life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, what do you think about that?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think he deserves better than what I have right now. I don’t know if I should break up with my boyfriend or if I should just focus on myself and wait for someone who’s better."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And what do you think, you think you're gonna be able to do in the next two years?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know. I guess I will see what happens. I will try to focus on myself and see what comes."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I think I need to figure out what I truly want."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're wondering what you really want."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I want to be valued and respected. I want to be seen."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. And you've been told that you're not valued and you're not respected."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I have. I don’t know if I’m just settling or if I’m just scared to move forward."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "No, I’m not. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Mm."
+    },
+    {
+      "role": "assistant",
+      "content": "I need some help deciding what to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel lost. I feel scared. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, yeah. So it sounds like you're not happy with the direction that things are going."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I’m not. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, that sounds like you're in trouble."
+    },
+    {
+      "role": "assistant",
+      "content": "I am. I just don’t know what to do. I feel lost."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel scared. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. You're feeling a little bit like you've got to get out of there and get away."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I feel like that. I feel like I need to figure out what I truly want."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you feel like you've got some things that you're not sure about."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I need some help deciding what to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're willing to talk about it, but you're not sure what you're gonna do."
+    },
+    {
+      "role": "assistant",
+      "content": "That’s correct. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling like you're losing control."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "And you feel like your life is going out of control."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that’s right. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "You're losing control of yourself."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "So, I'm wondering if you can help me understand where that control is going."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m not sure. I feel like it’s going into the wrong direction."
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you're a bit confused about what's going on with you."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I’m confused. I feel like I’m losing control."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What would you need to do to feel a little bit more in control?"
+    },
+    {
+      "role": "assistant",
+      "content": "I’m not sure. I feel like I need to focus on myself and figure out what I truly want."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're not sure what you want, but you're not willing to be like your mom and your sister and just go with the flow and be a stay-at-home mom."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know if I’m ready for that. I feel like I need to figure out what I truly want."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you need to figure out what you truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, I'm hearing you say that you feel like you're losing control of your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Right."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And, uh, you mentioned that you don't like the way you look right now."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I don’t. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my body."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're losing control of your story?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "And so, when you're thinking about what you want to do differently, it's really about having a little bit more control over your life and, um, your story."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that’s correct. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what would happen if you were to quit smoking?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know. I just don’t know. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you've got a feeling of a little bit of a sense of not being in control of what's going on, what's happening."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, you know, what you’re saying is, you’re kind of feeling like you’re out of control, and you want to regain some control of your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And, um, how did you find out about the meth?"
+    },
+    {
+      "role": "assistant",
+      "content": "My sister. She does it all the time."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my body. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I can see that you've got a lot on your plate."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you're losing control of who you are?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And, um, I think you've mentioned a couple of other things that have happened that have made it worse."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, my boyfriend cheated on me with my best friend."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "You feel like you’re losing control of your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, the idea of you having more control over your body, um, is something you'd like to have more of."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so, um, it sounds like you're feeling like you're losing control of your life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "Right."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "user",
+      "content": "You're feeling like you're losing control."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "Hi, thanks for the warm welcome. I am feeling a bit down, but I think I have something important I need to discuss."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, so, what's on your mind?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I recently discovered that my boyfriend cheated on me with my best friend, and I am not sure if I should stay with him."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "The weird thing is, he asked me to marry him recently, but now that I think about it, he asked my best friend to be part of our wedding, which really hurts."
+    },
+    {
+      "role": "assistant",
+      "content": "So you're not sure about the relationship?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like it’s too soon to decide. I need to think about what I truly want and if I feel safe with this person."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you're not ready to make a decision right now. So, what do you need to do to get ready to make that decision?"
+    },
+    {
+      "role": "user",
+      "content": "I need to talk to someone who understands and can help me figure this out. I don’t feel like I’m in control of the story I thought I had."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. I think you're right. It's very hard to be in control when you're in a place like this. It's very hard to know what's going to happen. I can tell you from experience that I've been in this hospital many times and it's hard to be in control."
+    },
+    {
+      "role": "user",
+      "content": "I think that’s why I’m scared to break up with him. I feel like it will be even harder to let go of something that feels comfortable."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, it sounds like you’ve kind of made a decision, um, to stay with him and to stay in the relationship, even though it’s not working out. And you're feeling like you don't want to do that because it would be really hard to let go of something that feels comfortable."
+    },
+    {
+      "role": "user",
+      "content": "Yes, that’s true. I don’t know if I can let go."
+    },
+    {
+      "role": "assistant",
+      "content": "It’s okay to feel that way. It’s not a good idea to be drinking this much."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I know. I’m just so sad about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So you’re really feeling like you’re not quite where you want to be right now, and you want to be somewhere else?"
+    },
+    {
+      "role": "user",
+      "content": "Yes. I feel like I’m stuck and I don’t know how to get to where I want to go."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I know this other guy who’s interested in me and I wonder if I’m settling or just scared to move forward."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're scared to move forward?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t know if I’m scared or if I’m just not sure what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I don’t want to make the wrong choice."
+    },
+    {
+      "role": "assistant",
+      "content": "So you're concerned about making the wrong choice."
+    },
+    {
+      "role": "user",
+      "content": "Yes, definitely. It’s a bit scary."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I’m just not sure what to do or who to turn to."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel that you are in a bit of a pickle at the moment?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I need some help deciding what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, tell me, what are some of the things that you think are making it hard for you to quit?"
+    },
+    {
+      "role": "user",
+      "content": "It’s just hard to let go. I know I deserve better, but I don’t know how to get there."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, um, you know, you've had a lot of experience with, um, the meth, and you know it's not safe for you. You've been to rehab and you know that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I know it’s not good for me, but I still feel like I have no control over this situation."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm. So you're feeling like you don't have a lot of control over it."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I don’t. I need to think about what I truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, I'm hearing that you've been thinking about this and you're not sure what you want."
+    },
+    {
+      "role": "user",
+      "content": "That’s correct. I feel like I’ve been living in someone else’s story."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to take control of my own story and decide what I want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it's like you've been going through some of those changes and you're not quite sure how to take control."
+    },
+    {
+      "role": "user",
+      "content": "Yes, that’s exactly what I mean. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, it sounds like your story is changing and that you feel like you're not in control."
+    },
+    {
+      "role": "user",
+      "content": "That’s true. I’m not in control. I feel like I’m living someone else’s dream."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, what would be your dream?"
+    },
+    {
+      "role": "user",
+      "content": "I want to have someone who truly sees me and respects me. I want to be valued and loved."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, you've been talking about what you need in a partner, and what you've found is that you don't feel that you've met those needs."
+    },
+    {
+      "role": "user",
+      "content": "Yes, and I don’t know if it’s because I was focusing on the wrong things or if I was just not being seen."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like there are other guys out there who actually do see me."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what to do. I’m just not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what you're saying is that you don't know what to do."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I don’t. I just don’t know how to get to where I want to go."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I know what I want, but I don’t know how to get there."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm."
+    },
+    {
+      "role": "user",
+      "content": "I need some help figuring this out. I feel lost."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m not in control of my own life."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you have a lot of reasons to quit smoking."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I just don’t know how to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're not confident in your ability to do it."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I’m not. I feel lost and scared."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you're lost and scared?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, definitely. I don’t know what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need someone to help me through this."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you feel like you need someone to help you through this process of getting to where you want to go?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I’m just not sure who or where to turn to."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, who do you think might be able to help you?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t know. I just don’t know what to do or who to turn to."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, it's like you don't know what to do or who to turn to."
+    },
+    {
+      "role": "user",
+      "content": "That’s right. I’m just lost and scared."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. You’ve got some other stuff going on."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, there is other stuff going on, but I think this is the biggest issue."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so it sounds like you're really concerned about your son's future."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I want him to have a good life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, what do you think about that?"
+    },
+    {
+      "role": "user",
+      "content": "I think he deserves better than what I have right now. I don’t know if I should break up with my boyfriend or if I should just focus on myself and wait for someone who’s better."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And what do you think, you think you're gonna be able to do in the next two years?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t know. I guess I will see what happens. I will try to focus on myself and see what comes."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I think I need to figure out what I truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're wondering what you really want."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I want to be valued and respected. I want to be seen."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. And you've been told that you're not valued and you're not respected."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I have. I don’t know if I’m just settling or if I’m just scared to move forward."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re not sure."
+    },
+    {
+      "role": "user",
+      "content": "No, I’m not. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm."
+    },
+    {
+      "role": "user",
+      "content": "I need some help deciding what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel lost. I feel scared. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, yeah. So it sounds like you're not happy with the direction that things are going."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I’m not. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, that sounds like you're in trouble."
+    },
+    {
+      "role": "user",
+      "content": "I am. I just don’t know what to do. I feel lost."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel scared. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. You're feeling a little bit like you've got to get out of there and get away."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I feel like that. I feel like I need to figure out what I truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you feel like you've got some things that you're not sure about."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I need some help deciding what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're willing to talk about it, but you're not sure what you're gonna do."
+    },
+    {
+      "role": "user",
+      "content": "That’s correct. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling like you're losing control."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "And you feel like your life is going out of control."
+    },
+    {
+      "role": "user",
+      "content": "Yes, that’s right. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "You're losing control of yourself."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "So, I'm wondering if you can help me understand where that control is going."
+    },
+    {
+      "role": "user",
+      "content": "I’m not sure. I feel like it’s going into the wrong direction."
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're a bit confused about what's going on with you."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I’m confused. I feel like I’m losing control."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What would you need to do to feel a little bit more in control?"
+    },
+    {
+      "role": "user",
+      "content": "I’m not sure. I feel like I need to focus on myself and figure out what I truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're not sure what you want, but you're not willing to be like your mom and your sister and just go with the flow and be a stay-at-home mom."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know if I’m ready for that. I feel like I need to figure out what I truly want."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you need to figure out what you truly want."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, I'm hearing you say that you feel like you're losing control of your life."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Right."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And, uh, you mentioned that you don't like the way you look right now."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I don’t. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my body."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're losing control of your story?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "And so, when you're thinking about what you want to do differently, it's really about having a little bit more control over your life and, um, your story."
+    },
+    {
+      "role": "user",
+      "content": "Yes, that’s correct. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what would happen if you were to quit smoking?"
+    },
+    {
+      "role": "user",
+      "content": "I don’t know. I just don’t know. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you've got a feeling of a little bit of a sense of not being in control of what's going on, what's happening."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, you know, what you’re saying is, you’re kind of feeling like you’re out of control, and you want to regain some control of your life."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And, um, how did you find out about the meth?"
+    },
+    {
+      "role": "user",
+      "content": "My sister. She does it all the time."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my body. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I can see that you've got a lot on your plate."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my story. I feel like I’m losing control of myself."
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you're losing control of who you are?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And, um, I think you've mentioned a couple of other things that have happened that have made it worse."
+    },
+    {
+      "role": "user",
+      "content": "Yes, my boyfriend cheated on me with my best friend."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "You feel like you’re losing control of your life."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, the idea of you having more control over your body, um, is something you'd like to have more of."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so, um, it sounds like you're feeling like you're losing control of your life."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "Right."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of myself. I feel like I’m losing control of my body."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of my life. I feel like I’m losing control of my story."
+    },
+    {
+      "role": "assistant",
+      "content": "You're feeling like you're losing control."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I am. I feel like I’m losing control of my life."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

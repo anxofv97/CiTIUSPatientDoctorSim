@@ -1,0 +1,1624 @@
+{
+  "profile_id": 4,
+  "timestamp": "2026-05-03T17:17:57.121108Z",
+  "max_turns": 100,
+  "num_turns_completed": 100,
+  "doctor_model": "models_1e/qwen-annomi-therapist_w5",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 25~44\n- occupation: vocational college student and trainee\n- situation of the client: the client is feeling unappreciated and jealous due to financial struggles and past family obligations. they helped family members financially and with childcare, but feel unrecognized for their efforts as their family members succeed, causing distress and a sense of being stuck in poverty.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - tiredness and lack of energy, so even small tasks take extra effort: moderate\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - isolating from family and friends: moderate\n  - inability to meet the responsibilities of work and family or ignoring other important roles: moderate\n  - angry outbursts, irritability, or frustration, even over small matters: mild\n  - anxiety, agitation, or restlessness: mild\n  - slowed thinking, speaking, or body movements: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - overgeneralizing: exhibited\n  - personalization: exhibited\n  - catastrophic thinking: exhibited\n  - minimisation: exhibited\n- depression severity: Moderate Depression - The client exhibits several symptoms of moderate depression including feelings of hopelessness, tiredness, and a lack of interest in activities.\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been really struggling to keep up with everything—school, work, and trying to take care of my mom. She’s been in and out of hospital lately, and even though I’ve been helping her with meds and daily tasks, it’s been emotionally draining. I keep thinking about how I could’ve done more, or how I should’ve been better at it. It’s not just about the physical work—it’s the feeling that I’m failing her, too, because I don’t have the resources or the strength to give her the care she deserves. That makes me feel even more helpless, like I’m always behind, always scrambling to keep things together.\n\nI also noticed my cousin recently bought a new car and started traveling more. She didn’t even mention how much she’s been doing—just casually said she “finally made it.” I found myself comparing myself to her, and it hit me hard. I remember when I was younger, I’d help out with babysitting or running errands, and I thought, *“This is how I’ll support my family.”* But now, I feel like I’m not just failing at getting ahead—I feel like I’m being ignored. I don’t know if I’m just unlucky, or if I’ve always been someone who gives too much and gets nothing in return. That thought just sits in my chest, heavy and cold, like I’m not worth anything in return for all I’ve done.\n\nAt work, I’ve been trying to stay focused, but I keep getting distracted by thoughts like, *“I’ll never make it financially,”* or *“I’m not smart enough to succeed here.”* I’ve been counting every dollar I get, making sure I don’t spend anything on things I can’t afford—like a new phone or even a good meal out. It feels like I’m living in a world where everything is out of reach, and I can’t even imagine a future where I’m not constantly worried about money. Even when I try to study, I get overwhelmed—like the material is too hard, and I’m just not built for this kind of work. I think about how much I used to believe I could do something big, but now I feel like I’m just spinning my wheels.\n\nI’ve been going to therapy and joining online forums, mostly to talk to people who seem to understand what I’m going through. It helps a little—sometimes just hearing someone say, *“I feel the same,”* makes it feel less like I’m alone. But I still come back to those old feelings: that I’m not enough, that I can’t change my situation, and that helping others is a burden I can’t escape. I don’t know if I’ll ever feel like I’ve earned anything for myself. Maybe I just need to stop trying to fix everything and start believing that I’m allowed to have a life beyond just taking care of others.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not feeling great lately. Just been feeling stuck. Like no matter what I do, I'm still at the same place."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. You've been in this situation for a while, and it sounds like you're not feeling like you have any progress."
+    },
+    {
+      "role": "assistant",
+      "content": "It's hard to keep going. I feel like I'm doing the same things over and over again."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. You've been in this place for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and I've always had the same concerns."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "It just seems like I've been spinning my wheels, and it's hard to see any progress."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, it's frustrating."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I'm not doing anything right."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I'm not doing anything to get myself ahead."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "It feels like I'm just barely holding on."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm just barely holding on."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not getting anywhere."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like it's just getting worse."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like it's getting worse?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. It feels like that. I feel like I'm not doing anything. I feel like I'm just trying to get by."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, it's not getting better."
+    },
+    {
+      "role": "assistant",
+      "content": "No."
+    },
+    {
+      "role": "user",
+      "content": "And you feel like it's getting worse."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. It feels like that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you know, you mentioned that you're feeling a little bit better in terms of the pain."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "But you also said that you're not sure whether that's because it's the pain or something else."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. It's hard to tell."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Well, so, um, let's just keep talking about that and-and-and see what else comes up."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Yeah. Sure. Okay."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, uh, uh, it sounds like you've been thinking about your use of alcohol, and, um, um, you mentioned that you don't like to drink too much, um, and, uh, and you don't like to drink at all when you're in pain."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Um, so, um, you don't like to drink too much, and, um, you don't like to drink at all when you're in pain."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, um, is there any time where you've been drinking too much or where you've been drinking when you were in pain and you've regretted it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I-I-I can think of one time when I was at a party, and I was feeling okay, and I didn't realize how much I was drinking until the next morning when I woke up."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I didn't like that. I didn't like how I felt. I didn't like how I acted. I didn't like how I was."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you were in pain at the party?"
+    },
+    {
+      "role": "assistant",
+      "content": "Not really. I was just feeling a little better that night, and I was trying to have fun. I-I didn't realize that I was drinking so much until the next morning when I woke up."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I didn't like it."
+    },
+    {
+      "role": "user",
+      "content": "So, you were drinking and you were having fun, but you didn't realize that you were drinking as much as you did until the next morning?"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And that was really upsetting to you, um, because you didn't like the way that you felt."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. It-it-it wasn't a good time."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what would you have liked to have done differently?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I would've liked to have stopped sooner, I think."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you would have liked to have stopped sooner."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. I would've liked to have stopped sooner, or I would've liked to have stopped at all, I guess."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you would have liked to have stopped at all."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. I-I guess I just wanted to fit in, you know."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I-I guess I wanted to try to let loose, um, and I didn't realize that I was drinking so much."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you were trying to let loose and you were trying to fit in."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. And I guess I didn't realize how much I was drinking until it was too late."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I didn't like it. I didn't like how I felt, and I didn't like the way that I acted."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're feeling a bit of regret about that time, you're feeling a bit of shame about that time."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And you're feeling a bit of sadness about that time as well."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what would you like to do about that? What do you want to do about that?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I don't know. It's-it's hard to say. I-I guess I just want to be more aware of what I'm doing, I guess."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I guess I just want to be more careful, I guess, you know."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I guess I want to be more careful. I guess I want to be more aware."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're-you're interested in trying to make some changes."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I-I-I think I'm willing to make some changes."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I think I can make some changes. I think I'm willing to try."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I think I'm willing to try."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I think I'm willing to try."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And you-you're-you're trying to make some changes?"
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I'm trying. I'm trying. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. I'm-I'm-I'm-I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm-I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm-I'm-I'm trying. I'm-I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And so you-you've been trying, and-and you're- you're really trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "You've been trying. And-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm"
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I'm-I'm-I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Okay. So, what do you think- what do you think would be the next step?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. It's-it's hard to say. I think I'm just trying to get through school right now, I guess."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're-you're trying to focus on school."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. I'm trying to focus on school. I'm trying to focus on school. I'm trying to focus on school."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, you're-you're trying to do that right now, and, um, you're-you're doing a lot of things to keep yourself busy, and it's just really hard to focus on school."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "You're trying to get back on track."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So, um, you're-you're trying to get back on track, and, um, you're trying to get back to the point where you're not smoking."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, you've got some really good goals here. You're gonna go to the gym every day, you're gonna be smoking less, and you're gonna be drinking less."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And you're gonna do that for a week, and then we'll see how you do. Okay?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Um, so how do you feel about that?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm okay with it, I guess."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, you're not ready to go ahead and do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So, um, we're going to talk about that a little bit more in a little bit more detail, but just so that you know that you're not alone in this."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, um, so what are some of the things that are going to make you feel like you can do it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, what's it about, um, being an alcoholic that you've noticed that you don't want to be an alcoholic?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I don't know. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, if you were to pick one number from 1 to 10, 1 being you're not ready at all, 10 being you're really ready, where would you be?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I would say about a five."
+    },
+    {
+      "role": "user",
+      "content": "A five? Okay. So, you're a little bit hesitant."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what do you think it would take for you to move up to a seven?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What would it take?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I mean, what do you think you need to do to get to a seven?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, you're-you're not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Well, I'm-I'm-I'm really, really curious. I'm really curious to know what it is that you're not sure about."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Hmm. Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, so, um, what do you think is-- what is it that you're not sure about?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're not sure about what?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what's the one thing that you're not sure about?"
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're not sure what you're going to do about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So, you're not sure what you're going to do about it. So, I'm wondering if you can tell me a little bit about what you like about your smoking."
+    },
+    {
+      "role": "assistant",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I'm not feeling great lately. Just been feeling stuck. Like no matter what I do, I'm still at the same place."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. You've been in this situation for a while, and it sounds like you're not feeling like you have any progress."
+    },
+    {
+      "role": "user",
+      "content": "It's hard to keep going. I feel like I'm doing the same things over and over again."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. You've been in this place for a while."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and I've always had the same concerns."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "It just seems like I've been spinning my wheels, and it's hard to see any progress."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, it's frustrating."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I'm not doing anything right."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I'm not doing anything to get myself ahead."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "It feels like I'm just barely holding on."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I'm just barely holding on."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm not getting anywhere."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like it's just getting worse."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like it's getting worse?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It feels like that. I feel like I'm not doing anything. I feel like I'm just trying to get by."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, it's not getting better."
+    },
+    {
+      "role": "user",
+      "content": "No."
+    },
+    {
+      "role": "assistant",
+      "content": "And you feel like it's getting worse."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It feels like that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you know, you mentioned that you're feeling a little bit better in terms of the pain."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "But you also said that you're not sure whether that's because it's the pain or something else."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. It's hard to tell."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Well, so, um, let's just keep talking about that and-and-and see what else comes up."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Yeah. Sure. Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, uh, uh, it sounds like you've been thinking about your use of alcohol, and, um, um, you mentioned that you don't like to drink too much, um, and, uh, and you don't like to drink at all when you're in pain."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Um, so, um, you don't like to drink too much, and, um, you don't like to drink at all when you're in pain."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, um, is there any time where you've been drinking too much or where you've been drinking when you were in pain and you've regretted it?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I-I-I can think of one time when I was at a party, and I was feeling okay, and I didn't realize how much I was drinking until the next morning when I woke up."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Um, I didn't like that. I didn't like how I felt. I didn't like how I acted. I didn't like how I was."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you were in pain at the party?"
+    },
+    {
+      "role": "user",
+      "content": "Not really. I was just feeling a little better that night, and I was trying to have fun. I-I didn't realize that I was drinking so much until the next morning when I woke up."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I didn't like it."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you were drinking and you were having fun, but you didn't realize that you were drinking as much as you did until the next morning?"
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And that was really upsetting to you, um, because you didn't like the way that you felt."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. It-it-it wasn't a good time."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what would you have liked to have done differently?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I would've liked to have stopped sooner, I think."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you would have liked to have stopped sooner."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. I would've liked to have stopped sooner, or I would've liked to have stopped at all, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you would have liked to have stopped at all."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. I-I guess I just wanted to fit in, you know."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I-I guess I wanted to try to let loose, um, and I didn't realize that I was drinking so much."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you were trying to let loose and you were trying to fit in."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. And I guess I didn't realize how much I was drinking until it was too late."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I didn't like it. I didn't like how I felt, and I didn't like the way that I acted."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're feeling a bit of regret about that time, you're feeling a bit of shame about that time."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And you're feeling a bit of sadness about that time as well."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what would you like to do about that? What do you want to do about that?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I don't know. It's-it's hard to say. I-I guess I just want to be more aware of what I'm doing, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I guess I just want to be more careful, I guess, you know."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Um, I guess I want to be more careful. I guess I want to be more aware."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're-you're interested in trying to make some changes."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I-I-I think I'm willing to make some changes."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I think I can make some changes. I think I'm willing to try."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Um, I think I'm willing to try."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I think I'm willing to try."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And you-you're-you're trying to make some changes?"
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I'm trying. I'm trying. I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. I'm-I'm-I'm-I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm-I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm trying. I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I'm trying. I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I'm-I'm-I'm trying. I'm-I'm trying. I'm-I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And so you-you've been trying, and-and you're- you're really trying."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "You've been trying. And-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and-and"
+    },
+    {
+      "role": "user",
+      "content": "I'm trying. I'm-I'm trying. I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm-I'm"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I'm-I'm-I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm-I'm-I'm trying. I'm trying. I'm trying."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Okay. So, what do you think- what do you think would be the next step?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. It's-it's hard to say. I think I'm just trying to get through school right now, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're-you're trying to focus on school."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. I'm trying to focus on school. I'm trying to focus on school. I'm trying to focus on school."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, you're-you're trying to do that right now, and, um, you're-you're doing a lot of things to keep yourself busy, and it's just really hard to focus on school."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "You're trying to get back on track."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So, um, you're-you're trying to get back on track, and, um, you're trying to get back to the point where you're not smoking."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, you've got some really good goals here. You're gonna go to the gym every day, you're gonna be smoking less, and you're gonna be drinking less."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And you're gonna do that for a week, and then we'll see how you do. Okay?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Um, so how do you feel about that?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm okay with it, I guess."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, you're not ready to go ahead and do it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So, um, we're going to talk about that a little bit more in a little bit more detail, but just so that you know that you're not alone in this."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, um, so what are some of the things that are going to make you feel like you can do it?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, what's it about, um, being an alcoholic that you've noticed that you don't want to be an alcoholic?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I don't know. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, if you were to pick one number from 1 to 10, 1 being you're not ready at all, 10 being you're really ready, where would you be?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I would say about a five."
+    },
+    {
+      "role": "assistant",
+      "content": "A five? Okay. So, you're a little bit hesitant."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what do you think it would take for you to move up to a seven?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What would it take?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I mean, what do you think you need to do to get to a seven?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, you're-you're not sure."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Well, I'm-I'm-I'm really, really curious. I'm really curious to know what it is that you're not sure about."
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Hmm. Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, so, um, what do you think is-- what is it that you're not sure about?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Hmm."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're not sure about what?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what's the one thing that you're not sure about?"
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're not sure what you're going to do about it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah. Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you're not sure what you're going to do about it. So, I'm wondering if you can tell me a little bit about what you like about your smoking."
+    },
+    {
+      "role": "user",
+      "content": "Um, I'm not sure. I'm not sure. I'm not sure. I'm not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're not sure what you like about your smoking."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

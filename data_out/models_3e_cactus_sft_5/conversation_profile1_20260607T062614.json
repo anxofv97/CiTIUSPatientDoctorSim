@@ -1,0 +1,456 @@
+{
+  "profile_id": 1,
+  "timestamp": "2026-06-07T06:26:14.181865Z",
+  "max_turns": 100,
+  "num_turns_completed": 27,
+  "doctor_model": "models_3e/qwen-cactus-therapist_w5",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 0~24\n- occupation: student\n- situation of the client: the client is feeling anxious about an upcoming college test, believing that their future depends on doing well. this anxiety is interfering with their sleep schedule.\n- resistance toward the support: low\n- symptom severity\n  - anxiety, agitation, or restlessness: severe\n  - sleep disturbances, including insomnia or sleeping too much: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: mild\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: mild\n- cognition distortion exhibition\n  - overgeneralizing: exhibited\n  - catastrophic thinking: exhibited\n- depression severity: 2-Mild Depression. The client is experiencing anxiety and sleep disturbances, but there is no indication of severe depression.\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been working really hard on this big test in my psychology class. I’ve been studying every night, going through notes, reviewing past exams, and even watching some lecture videos to make sure I’m fully prepared. I’ve put in a lot of time—more than I ever have before—and I feel like I’ve covered everything. But even with all that, I can’t shake the feeling that I’m not going to do well. I keep thinking, *What if I freeze up during the test? What if I can’t remember anything, even though I’ve studied so much?* That thought keeps coming back, especially at night when I lie in bed and can’t fall asleep. I end up lying awake, replaying the test in my head, worrying about how it will affect my grades and future plans.\n\nI’ve started to feel like my entire future is on the line. I used to think that school was just a way to get a degree, but now I feel like if I fail this test, it’s like I’ve failed everything. I’ve been thinking about what might happen if I don’t get a good grade—maybe I won’t be able to get into the program I’ve always wanted, or maybe I’ll be seen as not capable. It’s strange, because I know I’ve worked hard, but the fear is so strong that it feels like no matter how much I prepare, I’m still at risk of falling short. I’ve even started avoiding certain topics in my notes because I think I’ll panic if I have to think about them during the test. It’s making it harder to focus and relax, even when I’m trying to stay calm.\n\nThe therapist suggested I try deep breathing exercises, and I’ve agreed to do that. I didn’t think it would help much at first—after all, I’ve been stressed for weeks and I don’t really see how breathing can change the outcome of a test. But I’ve started doing it when I feel my heart race, especially before going to bed or when I’m sitting in class. It’s not magic, but it does help a little. I can feel my body slow down, and for a few seconds, the panic feels a bit less intense. I still get anxious, but now I have a small tool I can use to ground myself. I’ve also been thinking about taking a practice exam, and I’ve decided to schedule one this weekend. I know it won’t be perfect, but I want to simulate the real test environment so I can see how I actually perform under pressure. It might help me feel more confident, even if I’m still afraid.\n\nI’ve also been trying to stay connected with my friends, even though I feel like I’m withdrawing a little. I know I should be more open about how I’m feeling, but I don’t want to seem weak or like I’m failing. I keep telling myself that I’m doing my best, and that the test isn’t the only thing that defines me. But honestly, it feels like it is. I still don’t know if I’ll pass, and that uncertainty is weighing on me. I hope that by doing the practice exam and using the breathing techniques, I can start to feel more in control. I don’t know if it will fix everything, but I do know that I’m trying—not just to pass the test, but to keep believing that I can handle whatever comes next.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I'm feeling pretty anxious today. I have a big test coming up, and I've been studying really hard. I've tried to prepare myself for it, but I can't shake the feeling that I'm not going to do well"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like this test is causing you a lot of stress. Can you tell me more about what specifically makes you feel anxious about it?"
+    },
+    {
+      "role": "assistant",
+      "content": "It's a big test for my psychology class, and it feels like the whole future of my plans depend on it. I've studied a lot, but I keep worrying that I'll freeze up during the test"
+    },
+    {
+      "role": "user",
+      "content": "That sounds overwhelming. When you think about the test, what thoughts come to mind?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I'll fail, and that it will be my fault for not being prepared. I start thinking about all the things I could do to study better, or all the things I can do to make sure I do well"
+    },
+    {
+      "role": "user",
+      "content": "It seems like your mind is racing with a lot of different thoughts. How do these thoughts affect your mood and your ability to study?"
+    },
+    {
+      "role": "assistant",
+      "content": "I end up getting really anxious and worried, especially at night when I lie in bed and can't fall asleep. I end up lying there and thinking about the test, worrying about all the things that could go wrong"
+    },
+    {
+      "role": "user",
+      "content": "That sounds like a tough cycle to be caught in. Have you noticed any specific triggers that make these thoughts and feelings worse?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think it's especially bad when I see other people studying or when I think about how much time I've put into studying. It makes me feel like no matter how much I do, I'm not going to be good enough"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you're being very hard on yourself. What do you think might happen if you don't perform as well as you hope on the test?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that it will be really hard to recover from a bad grade. I think it might make it harder for me to get into my dream program, or it might make it seem like I'm not capable"
+    },
+    {
+      "role": "user",
+      "content": "It seems like you're assuming a lot of worst-case scenarios. What evidence do you have that supports these beliefs?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess it's just that I've always tried really hard to do well, and I've never really had a bad grade. It feels like if I don't do well on this test, it's all my fault"
+    },
+    {
+      "role": "user",
+      "content": "I understand. It can be very daunting to feel that way. What about any evidence that might contradict these beliefs? Have there been times when you've done well despite your worries?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, I think that I have done well on tests before, even if I felt really worried and anxious. I think that I just need to try and remember that it's okay to feel worried, and that I can still do my best"
+    },
+    {
+      "role": "user",
+      "content": "That's a good point. It's important to recognize that you've overcome challenges before. Let's explore some alternative outcomes. What are some other possible outcomes for your test results, aside from the worst-case scenario?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I might do well on the test, or that I might feel more confident and prepared when I take the test. I also think that even if I don't do as well as I hope, I'll be able to try again"
+    },
+    {
+      "role": "user",
+      "content": "Those are very realistic outcomes. How does it feel to consider these alternative scenarios compared to the worst-case scenario?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that it feels a little better to think about the positive outcomes, especially the one where I feel more confident during the test. I think that that would help me be more relaxed"
+    },
+    {
+      "role": "user",
+      "content": "That's great to hear. It's important to balance our thoughts with realistic and positive outcomes. Let's also consider how you can prepare for the test. What are some steps you can take to feel more prepared and confident?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I can take a practice test, which will help me get a better sense of how the real test will feel. I also think that I can try some deep breathing exercises to help me feel more relaxed"
+    },
+    {
+      "role": "user",
+      "content": "Those are excellent strategies. Taking practice tests and using deep breathing exercises can be very helpful. How do you feel about implementing these steps?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I can definitely try those out. I feel a little better now that I have some more strategies to help me feel more confident"
+    },
+    {
+      "role": "user",
+      "content": "I'm glad to hear that. Remember, it's okay to seek help and support from your friends and family. They can provide encouragement and even help you with studying. Is there anything else you would like to discuss today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that that would be very helpful. I've been trying to withdraw a little because I'm worried that I'll be a burden to my friends, but I think that it would really help to be more open"
+    },
+    {
+      "role": "user",
+      "content": "It's important to have a support system, and your friends and family care about you. Sharing your feelings and struggles can actually strengthen your relationships. How do you think they might react if you opened up to them?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that they would be really understanding, and would probably try to help me however they can. I've been really hard on myself for feeling like I'm a burden, but I think that they would actually really appreciate me being open"
+    },
+    {
+      "role": "user",
+      "content": "It sounds like you have a supportive network that you can lean on. Taking that step to open up can be very empowering. Is there anything specific you'd like to talk about with them?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I would like to talk to them about how I'm feeling, and maybe get some more advice on how to handle my anxiety. I also think that I might ask them to help me study"
+    },
+    {
+      "role": "user",
+      "content": "That sounds like a good plan. Reaching out for support can be very beneficial. Let's also work on some strategies to manage your anxiety and self-doubt. How do you feel about exploring these strategies together?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like that would be really helpful. I feel like I've been feeling anxious for a long time, and it would be nice to have some more tools to help me"
+    },
+    {
+      "role": "user",
+      "content": "Great, we can definitely work on that. One of the things we can do is identify and challenge the negative thoughts that contribute to your anxiety. Can you think of a recent negative thought that you've had about your studies?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I had a thought the other day that I just wasn't good enough. I think that I'm worried that I won't be able to get a good enough grade"
+    },
+    {
+      "role": "user",
+      "content": "That's a very strong and distressing thought. Let's take a moment to examine it. What evidence do you have that supports this thought?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I have a lot of work ahead of me, especially because I'm going to have to retake the test if I don't do well"
+    },
+    {
+      "role": "user",
+      "content": "That sounds like a lot of pressure. What evidence do you have that might contradict this thought?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I've worked really hard and have a lot of good qualities that will help me succeed. I also think that I've overcome challenges before and have done well"
+    },
+    {
+      "role": "user",
+      "content": "Those are important points to consider. It sounds like you have a lot of strengths and past successes that can support you. How does it feel to acknowledge those positive aspects?"
+    },
+    {
+      "role": "assistant",
+      "content": "It feels a little better to think about the positive aspects of the situation. I think that it's helpful to remind myself that I'm not defined by one test"
+    },
+    {
+      "role": "user",
+      "content": "Absolutely. It's important to remember that one test does not determine your entire future. Let's try to reframe your thoughts into something more balanced. How could you view this test in a way that acknowledges both the challenges and your strengths?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I could try and see this test as an opportunity to learn and grow. I think that I could try to focus on the things that I can control"
+    },
+    {
+      "role": "user",
+      "content": "That's a great perspective. Viewing it as a learning experience can help reduce some of the pressure. What steps could you take to reinforce this new perspective?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think that I could try to use the deep breathing techniques to help me relax and focus. I also think that I could try to talk to my friends and family more about how I'm feeling"
+    },
+    {
+      "role": "user",
+      "content": "Those sound like excellent strategies. Practicing deep breathing can help you stay calm, and sharing your feelings with your support system can provide you with more encouragement and understanding. How do you feel about giving these techniques a try?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like that would be really helpful. I feel a little better now that I have some new strategies to help me"
+    },
+    {
+      "role": "user",
+      "content": "I'm glad to hear that. Remember, it's a process, and it's okay to take small steps. Let's continue to work together on these thoughts and strategies so that you can feel more confident and prepared for your next test."
+    },
+    {
+      "role": "assistant",
+      "content": "I think that that would be great. Thank you so much for helping me"
+    },
+    {
+      "role": "user",
+      "content": "You're very welcome, Madison. I'm here to support you every step of the way. Let's keep working on this, and I'm confident you'll see positive changes."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you so much. I'm looking forward to continuing to work on this"
+    },
+    {
+      "role": "user",
+      "content": "Great. We'll continue to build on these strategies in our next session. Take care and see you soon."
+    },
+    {
+      "role": "assistant",
+      "content": "Thank you! Have a great day."
+    },
+    {
+      "role": "user",
+      "content": "You too, Madison. Take care.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Have a great day!"
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I'm feeling pretty anxious today. I have a big test coming up, and I've been studying really hard. I've tried to prepare myself for it, but I can't shake the feeling that I'm not going to do well"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like this test is causing you a lot of stress. Can you tell me more about what specifically makes you feel anxious about it?"
+    },
+    {
+      "role": "user",
+      "content": "It's a big test for my psychology class, and it feels like the whole future of my plans depend on it. I've studied a lot, but I keep worrying that I'll freeze up during the test"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds overwhelming. When you think about the test, what thoughts come to mind?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I'll fail, and that it will be my fault for not being prepared. I start thinking about all the things I could do to study better, or all the things I can do to make sure I do well"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like your mind is racing with a lot of different thoughts. How do these thoughts affect your mood and your ability to study?"
+    },
+    {
+      "role": "user",
+      "content": "I end up getting really anxious and worried, especially at night when I lie in bed and can't fall asleep. I end up lying there and thinking about the test, worrying about all the things that could go wrong"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a tough cycle to be caught in. Have you noticed any specific triggers that make these thoughts and feelings worse?"
+    },
+    {
+      "role": "user",
+      "content": "I think it's especially bad when I see other people studying or when I think about how much time I've put into studying. It makes me feel like no matter how much I do, I'm not going to be good enough"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you're being very hard on yourself. What do you think might happen if you don't perform as well as you hope on the test?"
+    },
+    {
+      "role": "user",
+      "content": "I think that it will be really hard to recover from a bad grade. I think it might make it harder for me to get into my dream program, or it might make it seem like I'm not capable"
+    },
+    {
+      "role": "assistant",
+      "content": "It seems like you're assuming a lot of worst-case scenarios. What evidence do you have that supports these beliefs?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it's just that I've always tried really hard to do well, and I've never really had a bad grade. It feels like if I don't do well on this test, it's all my fault"
+    },
+    {
+      "role": "assistant",
+      "content": "I understand. It can be very daunting to feel that way. What about any evidence that might contradict these beliefs? Have there been times when you've done well despite your worries?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah, I think that I have done well on tests before, even if I felt really worried and anxious. I think that I just need to try and remember that it's okay to feel worried, and that I can still do my best"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a good point. It's important to recognize that you've overcome challenges before. Let's explore some alternative outcomes. What are some other possible outcomes for your test results, aside from the worst-case scenario?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I might do well on the test, or that I might feel more confident and prepared when I take the test. I also think that even if I don't do as well as I hope, I'll be able to try again"
+    },
+    {
+      "role": "assistant",
+      "content": "Those are very realistic outcomes. How does it feel to consider these alternative scenarios compared to the worst-case scenario?"
+    },
+    {
+      "role": "user",
+      "content": "I think that it feels a little better to think about the positive outcomes, especially the one where I feel more confident during the test. I think that that would help me be more relaxed"
+    },
+    {
+      "role": "assistant",
+      "content": "That's great to hear. It's important to balance our thoughts with realistic and positive outcomes. Let's also consider how you can prepare for the test. What are some steps you can take to feel more prepared and confident?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I can take a practice test, which will help me get a better sense of how the real test will feel. I also think that I can try some deep breathing exercises to help me feel more relaxed"
+    },
+    {
+      "role": "assistant",
+      "content": "Those are excellent strategies. Taking practice tests and using deep breathing exercises can be very helpful. How do you feel about implementing these steps?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I can definitely try those out. I feel a little better now that I have some more strategies to help me feel more confident"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that. Remember, it's okay to seek help and support from your friends and family. They can provide encouragement and even help you with studying. Is there anything else you would like to discuss today?"
+    },
+    {
+      "role": "user",
+      "content": "I think that that would be very helpful. I've been trying to withdraw a little because I'm worried that I'll be a burden to my friends, but I think that it would really help to be more open"
+    },
+    {
+      "role": "assistant",
+      "content": "It's important to have a support system, and your friends and family care about you. Sharing your feelings and struggles can actually strengthen your relationships. How do you think they might react if you opened up to them?"
+    },
+    {
+      "role": "user",
+      "content": "I think that they would be really understanding, and would probably try to help me however they can. I've been really hard on myself for feeling like I'm a burden, but I think that they would actually really appreciate me being open"
+    },
+    {
+      "role": "assistant",
+      "content": "It sounds like you have a supportive network that you can lean on. Taking that step to open up can be very empowering. Is there anything specific you'd like to talk about with them?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I would like to talk to them about how I'm feeling, and maybe get some more advice on how to handle my anxiety. I also think that I might ask them to help me study"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a good plan. Reaching out for support can be very beneficial. Let's also work on some strategies to manage your anxiety and self-doubt. How do you feel about exploring these strategies together?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like that would be really helpful. I feel like I've been feeling anxious for a long time, and it would be nice to have some more tools to help me"
+    },
+    {
+      "role": "assistant",
+      "content": "Great, we can definitely work on that. One of the things we can do is identify and challenge the negative thoughts that contribute to your anxiety. Can you think of a recent negative thought that you've had about your studies?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I had a thought the other day that I just wasn't good enough. I think that I'm worried that I won't be able to get a good enough grade"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a very strong and distressing thought. Let's take a moment to examine it. What evidence do you have that supports this thought?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I have a lot of work ahead of me, especially because I'm going to have to retake the test if I don't do well"
+    },
+    {
+      "role": "assistant",
+      "content": "That sounds like a lot of pressure. What evidence do you have that might contradict this thought?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I've worked really hard and have a lot of good qualities that will help me succeed. I also think that I've overcome challenges before and have done well"
+    },
+    {
+      "role": "assistant",
+      "content": "Those are important points to consider. It sounds like you have a lot of strengths and past successes that can support you. How does it feel to acknowledge those positive aspects?"
+    },
+    {
+      "role": "user",
+      "content": "It feels a little better to think about the positive aspects of the situation. I think that it's helpful to remind myself that I'm not defined by one test"
+    },
+    {
+      "role": "assistant",
+      "content": "Absolutely. It's important to remember that one test does not determine your entire future. Let's try to reframe your thoughts into something more balanced. How could you view this test in a way that acknowledges both the challenges and your strengths?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I could try and see this test as an opportunity to learn and grow. I think that I could try to focus on the things that I can control"
+    },
+    {
+      "role": "assistant",
+      "content": "That's a great perspective. Viewing it as a learning experience can help reduce some of the pressure. What steps could you take to reinforce this new perspective?"
+    },
+    {
+      "role": "user",
+      "content": "I think that I could try to use the deep breathing techniques to help me relax and focus. I also think that I could try to talk to my friends and family more about how I'm feeling"
+    },
+    {
+      "role": "assistant",
+      "content": "Those sound like excellent strategies. Practicing deep breathing can help you stay calm, and sharing your feelings with your support system can provide you with more encouragement and understanding. How do you feel about giving these techniques a try?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like that would be really helpful. I feel a little better now that I have some new strategies to help me"
+    },
+    {
+      "role": "assistant",
+      "content": "I'm glad to hear that. Remember, it's a process, and it's okay to take small steps. Let's continue to work together on these thoughts and strategies so that you can feel more confident and prepared for your next test."
+    },
+    {
+      "role": "user",
+      "content": "I think that that would be great. Thank you so much for helping me"
+    },
+    {
+      "role": "assistant",
+      "content": "You're very welcome, Madison. I'm here to support you every step of the way. Let's keep working on this, and I'm confident you'll see positive changes."
+    },
+    {
+      "role": "user",
+      "content": "Thank you so much. I'm looking forward to continuing to work on this"
+    },
+    {
+      "role": "assistant",
+      "content": "Great. We'll continue to build on these strategies in our next session. Take care and see you soon."
+    },
+    {
+      "role": "user",
+      "content": "Thank you! Have a great day."
+    },
+    {
+      "role": "assistant",
+      "content": "You too, Madison. Take care.\n"
+    },
+    {
+      "role": "user",
+      "content": "Have a great day!"
+    },
+    {
+      "role": "assistant",
+      "content": "Goodbye."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

@@ -1,0 +1,696 @@
+{
+  "profile_id": 2,
+  "timestamp": "2026-05-04T05:20:06.618281Z",
+  "max_turns": 100,
+  "num_turns_completed": 42,
+  "doctor_model": "models_3e/qwen-annomi-therapist_w5",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- gender: female\n- age: 25~44\n- marital status: not married\n- situation of the client: the client recently discovered that her boyfriend cheated on her with her best friend, and she is struggling with whether to continue the relationship given the upcoming engagement plans.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - angry outbursts, irritability, or frustration, even over small matters: moderate\n  - anxiety, agitation, or restlessness: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: mild\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: mild\n  - becoming withdrawn, negative, or detached: mild\n  - greater impulsivity: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - catastrophic thinking: exhibited\n- depression severity: 2-Mild Depression. The client exhibits moderate sadness and mood disturbance, but there are no signs of severe depression.\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been going through a lot of emotional turmoil, especially around the relationship I’ve been in for so long. I’ve always believed that life should follow a clear path—something stable, predictable, and under my control. That’s why I’ve spent years building plans: when to move, what to study, how to spend my time, even how I approach relationships. I thought if I just stayed focused and followed through on every detail, everything would work out. I never thought I’d have to question that belief, especially not after what happened with my boyfriend and my best friend.  \n\nWhen I found out he had an affair—without telling me, and with someone I trusted more than anyone—it shattered that sense of control. I felt like everything I’d built in my life had collapsed. I was furious at first, not just because of the betrayal, but because I’d been so certain of his loyalty. I thought if I just stayed strong, if I stayed in the relationship, it would all be okay. But now I see how wrong that was. I keep replaying the moments when I didn’t notice the changes, when I assumed everything was fine. I wonder if I’m just too rigid to see the signs, or if I’ve always been too afraid to let myself be vulnerable.  \n\nThis week, he asked if my best friend could be part of their wedding—which is what really made me feel like I was losing everything. I couldn’t believe it. I thought he was being sincere, but now I can’t trust that. It makes me feel suspicious, like maybe he only cared about the surface of things. I told him I needed space, and I’ve been trying to process it all. I didn’t want to just shut down or end things, but I also can’t ignore how much it’s shaken my sense of safety. I’ve been sharing my feelings with the therapist, because I know that’s how I find clarity—by talking it out, even when it’s painful.  \n\nI’ve also been thinking about this other man who’s shown interest in me for a year. It’s strange—I never considered him before, not because I didn’t like him, but because I thought I was meant to be with someone who truly understood me. Now, with everything falling apart, I find myself wondering if I’ve been holding myself back. I worry that maybe I’ve wasted time with someone who wasn’t truly right for me. It makes me feel sad, like I’m missing out on something. But at the same time, I’m scared. Scared that if I open up to someone new, I’ll lose what little control I still have. I keep going back to my plans—my schedule, my routines, my rules about cleanliness and order—because they feel like the only things that can keep me grounded. But lately, even that feels fragile.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m so upset about my situation."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What's your name?"
+    },
+    {
+      "role": "assistant",
+      "content": "I want to tell my boyfriend that I can’t be in the relationship anymore."
+    },
+    {
+      "role": "user",
+      "content": "Tell me a little bit about your relationship."
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve been dating him for five years. We were engaged, but then he cheated with my best friend."
+    },
+    {
+      "role": "user",
+      "content": "So you were engaged for five years."
+    },
+    {
+      "role": "assistant",
+      "content": "No, we were engaged for two years, but dating for five."
+    },
+    {
+      "role": "user",
+      "content": "So you’ve been together for five years."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes."
+    },
+    {
+      "role": "user",
+      "content": "And you were engaged for two years."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And he cheated on me with my best friend."
+    },
+    {
+      "role": "user",
+      "content": "Oh, my God."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like my whole world is crumbling around me."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I can’t control anything."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t know what to do. I want to stay in the relationship because it’s comfortable, but now I know that it’s not healthy."
+    },
+    {
+      "role": "user",
+      "content": "So on one hand, you want to stay in the relationship because it's safe and warm, and on the other hand, you know that it’s not healthy."
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. But if I don’t stay in it, then I feel like I’ll be lonely forever."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you feel like there is a choice between staying in a relationship that isn’t healthy and being lonely forever."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I know the right thing to do is to leave him, but it’s so hard to give that up."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you know what you should do, but it’s hard to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And now he wants to still get married with my friend as his best man. I can’t stand it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So he’s still getting married?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, he is. And he’s asking if he can invite my best friend."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I don’t want to go through with the wedding if he does."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m losing control of everything. I don’t know what to do."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So it sounds like you’re feeling a little bit anxious about this whole thing, and you’re not sure what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, exactly. And I’m not sure what to tell him. I’m worried about hurting him."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I want to tell him that I can’t do it, but I don’t want to be cruel."
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you have this dilemma, and you're not sure what to do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, that’s right. And I think the biggest thing is that I’m scared of being alone."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m scared of being alone forever."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you're scared that you're going to be alone forever. That’s pretty intense."
+    },
+    {
+      "role": "assistant",
+      "content": "It is, yeah. And it feels like everything I’ve planned is falling apart."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you have a vision of the future and it doesn’t look like what you wanted it to look like."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, exactly. And now I’m questioning whether or not I’ve been living my life to its fullest."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you’re not happy with where you are right now."
+    },
+    {
+      "role": "assistant",
+      "content": "No, not at all. I’m very unhappy."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re not happy with where you are and you have a vision of where you want to be. So how do you see the two of those things connecting?"
+    },
+    {
+      "role": "assistant",
+      "content": "Well, I want to stay with him, but I can’t, because I know it’s unhealthy."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I know that I need to move on, but I’m scared of not finding anyone else."
+    },
+    {
+      "role": "user",
+      "content": "So on the one hand, you want to stay with your boyfriend, but you know that you also want to be in a relationship that’s not going to hurt you?"
+    },
+    {
+      "role": "assistant",
+      "content": "Exactly. And I know that staying with him would be the easier choice, but I know it’s not the right one."
+    },
+    {
+      "role": "user",
+      "content": "And on the other hand, you also feel like you’re not confident that you’ll be able to find someone else?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, exactly. And that’s scary to me."
+    },
+    {
+      "role": "user",
+      "content": "So what do you think you need to do to feel more confident that you’ll be able to find someone else?"
+    },
+    {
+      "role": "assistant",
+      "content": "Well, I think I need to be open to the idea of being alone for a while."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I think that scares me the most—being alone for a while."
+    },
+    {
+      "role": "user",
+      "content": "And what do you think you can do to feel more comfortable with that?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think I need to remind myself that I’m worth it. That I deserve to be with someone who treats me well."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I think I need to remind myself that I’m beautiful and worthy of love."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And that even if I’m alone for a while, I’m still worth it."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I think I need to have faith that there is someone out there for me."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And that it’s okay to be alone for a while until that person comes along."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what do you think it would take for you to be able to feel that way?"
+    },
+    {
+      "role": "assistant",
+      "content": "I think it would take me accepting that I need to be alone for a while."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And that it’s okay to be alone for a while."
+    },
+    {
+      "role": "user",
+      "content": "So, you’ve been talking about this idea of being alone for a while and realizing that you have to do that in order to find a better-fitting mate?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I know that if I want to find someone who truly loves me, I need to be okay with being alone for a while."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, I’m hearing this sense of, uh, you need to be alone to find a better-fitting mate, but you also said that you need to be alone in order to find yourself."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I know that sounds cliche, but I think that it’s so true. I think if I want to find the right person, I need to find myself first."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you’ve got a couple of different things going on in your head right now. You’ve got this idea about, you know, being with someone and being happy, but also this idea that you need to be alone and find yourself first."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I know that’s what I need to do. I just need to have faith that it will work out."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you’ve made a decision to-to pursue this path of, uh, being by yourself, and-and you just need to have faith that it will work out."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I know that’s what I need to do. I just need to have faith that it will work out."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, you know, I really admire people who are able to make decisions like that. I mean, it’s not something that’s gonna be easy, you know, especially in your situation. You’ve been single for a long time. You’ve been successful. You’ve got a great job. So, you know, you have a lot to be thankful for."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, I do. Thank you. I feel a lot better."
+    },
+    {
+      "role": "user",
+      "content": "And I’m glad I could help."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes, thank you. Have a nice day."
+    },
+    {
+      "role": "user",
+      "content": "You too.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Bye."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I’m so upset about my situation."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What's your name?"
+    },
+    {
+      "role": "user",
+      "content": "I want to tell my boyfriend that I can’t be in the relationship anymore."
+    },
+    {
+      "role": "assistant",
+      "content": "Tell me a little bit about your relationship."
+    },
+    {
+      "role": "user",
+      "content": "I’ve been dating him for five years. We were engaged, but then he cheated with my best friend."
+    },
+    {
+      "role": "assistant",
+      "content": "So you were engaged for five years."
+    },
+    {
+      "role": "user",
+      "content": "No, we were engaged for two years, but dating for five."
+    },
+    {
+      "role": "assistant",
+      "content": "So you’ve been together for five years."
+    },
+    {
+      "role": "user",
+      "content": "Yes."
+    },
+    {
+      "role": "assistant",
+      "content": "And you were engaged for two years."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And he cheated on me with my best friend."
+    },
+    {
+      "role": "assistant",
+      "content": "Oh, my God."
+    },
+    {
+      "role": "user",
+      "content": "I feel like my whole world is crumbling around me."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I can’t control anything."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I don’t know what to do. I want to stay in the relationship because it’s comfortable, but now I know that it’s not healthy."
+    },
+    {
+      "role": "assistant",
+      "content": "So on one hand, you want to stay in the relationship because it's safe and warm, and on the other hand, you know that it’s not healthy."
+    },
+    {
+      "role": "user",
+      "content": "Exactly. But if I don’t stay in it, then I feel like I’ll be lonely forever."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you feel like there is a choice between staying in a relationship that isn’t healthy and being lonely forever."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I know the right thing to do is to leave him, but it’s so hard to give that up."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you know what you should do, but it’s hard to do."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And now he wants to still get married with my friend as his best man. I can’t stand it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So he’s still getting married?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, he is. And he’s asking if he can invite my best friend."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I don’t want to go through with the wedding if he does."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m losing control of everything. I don’t know what to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So it sounds like you’re feeling a little bit anxious about this whole thing, and you’re not sure what to do."
+    },
+    {
+      "role": "user",
+      "content": "Yes, exactly. And I’m not sure what to tell him. I’m worried about hurting him."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I want to tell him that I can’t do it, but I don’t want to be cruel."
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you have this dilemma, and you're not sure what to do?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, that’s right. And I think the biggest thing is that I’m scared of being alone."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I’m scared of being alone forever."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you're scared that you're going to be alone forever. That’s pretty intense."
+    },
+    {
+      "role": "user",
+      "content": "It is, yeah. And it feels like everything I’ve planned is falling apart."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you have a vision of the future and it doesn’t look like what you wanted it to look like."
+    },
+    {
+      "role": "user",
+      "content": "Yes, exactly. And now I’m questioning whether or not I’ve been living my life to its fullest."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you’re not happy with where you are right now."
+    },
+    {
+      "role": "user",
+      "content": "No, not at all. I’m very unhappy."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re not happy with where you are and you have a vision of where you want to be. So how do you see the two of those things connecting?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I want to stay with him, but I can’t, because I know it’s unhealthy."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I know that I need to move on, but I’m scared of not finding anyone else."
+    },
+    {
+      "role": "assistant",
+      "content": "So on the one hand, you want to stay with your boyfriend, but you know that you also want to be in a relationship that’s not going to hurt you?"
+    },
+    {
+      "role": "user",
+      "content": "Exactly. And I know that staying with him would be the easier choice, but I know it’s not the right one."
+    },
+    {
+      "role": "assistant",
+      "content": "And on the other hand, you also feel like you’re not confident that you’ll be able to find someone else?"
+    },
+    {
+      "role": "user",
+      "content": "Yes, exactly. And that’s scary to me."
+    },
+    {
+      "role": "assistant",
+      "content": "So what do you think you need to do to feel more confident that you’ll be able to find someone else?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I think I need to be open to the idea of being alone for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I think that scares me the most—being alone for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "And what do you think you can do to feel more comfortable with that?"
+    },
+    {
+      "role": "user",
+      "content": "I think I need to remind myself that I’m worth it. That I deserve to be with someone who treats me well."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I think I need to remind myself that I’m beautiful and worthy of love."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And that even if I’m alone for a while, I’m still worth it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I think I need to have faith that there is someone out there for me."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And that it’s okay to be alone for a while until that person comes along."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what do you think it would take for you to be able to feel that way?"
+    },
+    {
+      "role": "user",
+      "content": "I think it would take me accepting that I need to be alone for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And that it’s okay to be alone for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you’ve been talking about this idea of being alone for a while and realizing that you have to do that in order to find a better-fitting mate?"
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I know that if I want to find someone who truly loves me, I need to be okay with being alone for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, I’m hearing this sense of, uh, you need to be alone to find a better-fitting mate, but you also said that you need to be alone in order to find yourself."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I know that sounds cliche, but I think that it’s so true. I think if I want to find the right person, I need to find myself first."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you’ve got a couple of different things going on in your head right now. You’ve got this idea about, you know, being with someone and being happy, but also this idea that you need to be alone and find yourself first."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I know that’s what I need to do. I just need to have faith that it will work out."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you’ve made a decision to-to pursue this path of, uh, being by yourself, and-and you just need to have faith that it will work out."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I know that’s what I need to do. I just need to have faith that it will work out."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, you know, I really admire people who are able to make decisions like that. I mean, it’s not something that’s gonna be easy, you know, especially in your situation. You’ve been single for a long time. You’ve been successful. You’ve got a great job. So, you know, you have a lot to be thankful for."
+    },
+    {
+      "role": "user",
+      "content": "Yes, I do. Thank you. I feel a lot better."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m glad I could help."
+    },
+    {
+      "role": "user",
+      "content": "Yes, thank you. Have a nice day."
+    },
+    {
+      "role": "assistant",
+      "content": "You too.\n"
+    },
+    {
+      "role": "user",
+      "content": "Bye."
+    },
+    {
+      "role": "assistant",
+      "content": "Good to see you again."
+    }
+  ],
+  "doctor_history_trimmed": null
+}

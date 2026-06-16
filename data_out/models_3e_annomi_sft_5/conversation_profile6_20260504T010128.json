@@ -1,0 +1,1624 @@
+{
+  "profile_id": 6,
+  "timestamp": "2026-05-04T01:01:28.707964Z",
+  "max_turns": 100,
+  "num_turns_completed": 100,
+  "doctor_model": "models_3e/qwen-annomi-therapist_w5",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 25~44\n- occupation: grad student\n- situation of the client: the client is struggling with depression and a lack of motivation, impacting their research performance and productivity as a graduate student.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - sleep disturbances, including insomnia or sleeping too much: moderate\n  - tiredness and lack of energy, so even small tasks take extra effort: moderate\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - inability to meet the responsibilities of work and family or ignoring other important roles: moderate\n  - anxiety, agitation, or restlessness: mild\n  - slowed thinking, speaking, or body movements: mild\n  - isolating from family and friends: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - overgeneralizing: exhibited\n  - minimisation: exhibited\n- depression severity: 3-Moderate Depression\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been feeling like I’m constantly trying to keep up — not just with my research, but with all the adult responsibilities that came with moving into independence. I remember when I was in undergrad, I always had my parents to fall back on — they’d help with the groceries, take care of the laundry, even remind me to file my taxes. Now that I’m a grad student, I’m doing everything myself, and it’s starting to feel like a weight I didn’t expect to carry. I used to think that being productive meant doing well in school, and that if I didn’t achieve that, I wasn’t doing anything right. So when I got feedback that my research proposal wasn’t strong, it hit me hard. I just sat there for hours, not sure what to do next. It felt like a personal failure — like I’d somehow let down the standards I’ve always believed I should meet.\n\nI’ve been trying to stay consistent with my schedule, but even simple things like cooking or organizing my closet feel overwhelming. Last weekend, I tried to make a meal for myself, but ended up spending two hours just deciding what to cook. I kept thinking, *I can’t do this alone*, and that made me feel like I wasn’t enough. I didn’t even finish the meal. Instead, I ended up staying in and watching a few episodes of a show I’ve been meaning to finish. It wasn’t intentional — I just didn’t feel like I had the energy or the clarity to face the day. I know it sounds selfish, but sometimes I feel like I’m failing at being a responsible adult, and that guilt makes me even more anxious.\n\nThe medication I’ve been taking has helped a little — I’m not as restless or irritable all day — but there’s still this nagging sense of shame when I take it. I keep thinking, *Why do I need to be on medication? Isn’t that a sign that I’m not strong enough?* It makes me feel like I’m not “normal” or “in control,” which is something I’ve always tried to avoid. I don’t want to rely on anything outside of my willpower. But I also know that not taking it would make the anxiety worse, and that would make it harder to even start work. So I take it, but I still feel like I’m not doing enough — like I’m failing at being the person I thought I’d become.\n\nI’ve started talking to my therapist regularly, and it’s been really helpful. Hearing someone else’s experience — especially one where the struggles feel familiar — makes it easier to not spiral into that inner voice that says I’m not good enough. I still catch myself thinking, *If I can’t be productive, I’m a failure*, but now I’m learning to pause and ask, *Is that really true?* I’m not there yet, but I’m trying. I want to be the kind of person who can handle all of this — the studies, the responsibilities, the emotions — without falling apart. And maybe, just maybe, that’s possible if I allow myself to be human instead of perfect.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "Hey, how are you doing today? I wanted to talk about my last session and the things that have happened since."
+    },
+    {
+      "role": "user",
+      "content": "So you've been here before?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. It was the first time I came in."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’ve been feeling a lot like the same issues I talked about last time have just been getting worse."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're feeling the same way that you were feeling when you came here last time?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’ve been trying to keep to my schedule and do my research, but I just feel like I’m not getting anything done."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not getting enough done. What was it that you were hoping to accomplish today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I’m trying to keep up with my schedule and keep working on my research. And today, I had a couple of tasks I wanted to accomplish, but I just couldn’t get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you have a list of things you need to do. And it sounds like you're hoping that by coming here today, you can get a little bit of momentum going and get some of those things accomplished."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to get some kind of momentum going."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I'm glad you came today. I think you're off to a good start by being here. And I think you're right, we do need to get some things accomplished. So I'd like to work with you today to help you get those things done. Um, what are your goals for today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess the main goal is just to make some progress on my research. It’s been feeling like I’m not doing as well as I should be doing, so I’m hoping that I can make some kind of progress and feel like I’m back on track"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not making the progress that you need to make."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And that makes me feel like I’m not doing as well as I should be."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you've got a lot of self-expectations that you need to meet in order to feel successful."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like if I’m not doing as well as I think I should be, then I’m not successful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And that's causing you a lot of stress."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And then also, on top of that, the stress of just trying to do all of these things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're not only falling short of what you think you should be doing, but also that you're not able to do the things that you think you need to be doing."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And it’s a lot on my own. I’m trying to do all of these things by myself and it feels really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you’ve been trying to change for a while. What is it that you’re trying to change?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess it’s just trying to get the momentum going on my research."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're feeling like you need to get more momentum going in your research."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I guess that it’s been really hard lately because I’ve been trying to do so many things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re feeling like you need to get more momentum going in your research, but you’ve been trying to do a lot of other things and you feel like that’s kind of getting in the way."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m trying to do too many things on my own and it’s hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re feeling a little bit overwhelmed with trying to do a lot of things on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like it’s really hard to do things on my own. I don’t really have anyone else to help me with a lot of the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "So it sounds like you’ve been trying to get more momentum going in your research and you’re feeling a little bit overwhelmed with trying to do a lot of things on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And it feels really hard to get started with all of these things."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So it sounds like you’re feeling like you need some extra support and you’re not sure where to go from here."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m trying to find ways to get more support, but it’s been really hard."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you’re kind of at a crossroads right now. You’ve been making some good efforts to get to bed on time, you’ve been trying to cut back on drinking, and you’ve been looking for more support, but you’re feeling like you’re not quite sure where to go from here."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’ve made some good efforts, but it’s still really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what would help make it easier for you to get to bed on time?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, I need to be better at planning my day so that I have enough time to get ready for bed on time."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So in order to get to bed on time, you need to plan your day differently."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I need to plan my day better so that I have enough time to do everything."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what would that look like? What would be different?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, it would be trying to plan my day more realistically. And not try to do so much in one day."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you'd be more mindful of how much time you're scheduling things and you'd be more realistic about how much time it takes to do each task?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And not trying to do so many things in one day."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what other goals do you have for yourself?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just continuing to work on my research and trying to make some kind of progress."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what are some things you can do to make that a priority?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to plan my day more realistically so that I have enough time to work on my research."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what do you think might be some barriers to making this plan?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to get myself started in the morning."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And getting myself started on the tasks I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're kind of feeling a little bit overwhelmed with what you have to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And not sure how to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And it sounds like you're feeling that you need some support in getting started."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’ve got a list of things you need to do, you're feeling a bit overwhelmed, you need some support in getting started."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own and it’s really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you've got a lot on your plate and you need some support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’ve got a list of things you need to do, you're feeling a bit overwhelmed, you need some support in getting started."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you have some goals in mind around getting more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I need to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what kind of support would be most helpful for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you feel like you're doing a lot of things on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot on my own and it’s really hard."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what would help you in that?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And also, just trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Because I feel like it’s really hard to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're-you're feeling like you need some help in terms of, you know, getting to bed on time, you know, doing your chores around the house, and some of those other things. And, um, you're feeling a little bit overwhelmed."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And it feels really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what would be helpful for you right now?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you really want to get to the next step, and you're willing to make some changes, but you're just not sure where to start."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m trying to find a way to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And not sure where to begin."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "So I’m hoping to find ways to get started."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, and it sounds like you’re feeling a little bit a bit hesitant about what you might be able to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m trying to do a lot on my own and it feels really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you’ve been making some efforts and you've been trying to do things on your own, but it sounds like it’s not quite enough and it's hard to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m trying to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you've also been trying to get more support?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And it sounds like you've been doing some research on your own and looking into some of the services that are out there and you've been trying to get some information about them?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own and it feels really hard."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're trying to do a lot of things on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And it’s really hard."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So you’ve been trying to find some resources and information on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And trying to figure out where to begin."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And you’ve also noticed that you’re having a lot of stress and anxiety around this."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And trying to find ways to manage that."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And so I’m wondering if you’d be willing to explore this a little bit more, um, over the next few visits."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what do you think would be helpful for you in terms of getting started?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "Because I feel like it’s really hard to get started."
+    },
+    {
+      "role": "user",
+      "content": "Yeah, yeah. And it sounds like you’ve been struggling with this for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. It’s been feeling like that for a while."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And it sounds like you’ve already taken some steps to get support by talking to your doctor and getting your medication prescription."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And it’s been helpful to talk to the doctor."
+    },
+    {
+      "role": "user",
+      "content": "That must have been helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. It’s been helpful."
+    },
+    {
+      "role": "user",
+      "content": "So, um, what are some of the other ways that you’re hoping to get more support?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So, you're not quite sure where to start or what to do next?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get started."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out how to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you’re-you’re at a point where you’re-you’re ready to-to take some steps, but you’re also realizing that you can’t do this alone."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And it feels really hard."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And you mentioned some things about your family."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And trying to figure out how to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So I guess I’m wondering, how would involving your family be helpful?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what would you need to do in order to get started?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what would you need to do in order to get started?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So having people around who can help you and support you is really important?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like right now you’re not getting enough support and you want to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And trying to figure out how to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're really at a crossroads in your life right now. You've made a decision that you need to make some changes in your life. You've identified some of the problems that you have. You're starting to think about some of the solutions to those problems. And yet, on the other hand, you're not sure if you can really do this alone. You're not sure if you have the skills to do this alone. And so you're looking for more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're trying to do a lot of things on your own and you need some more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're in a pretty tough spot. You're feeling pretty down. You feel like you've lost a lot of your friends. You feel like you have a lot of stress in your life. And yet, on the other hand, you also have some strengths. You've been able to get to the doctor's office. You've been able to make a decision to do something about your substance use. And you've also been able to identify some of the resources that you need to get some support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you're trying to do a lot of things on your own and you need some more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I would encourage you to start with the local alcohol and drug program. They're a great resource. They can give you some information about support groups, low-cost counseling, and they can also give you information about some of the other services that are available around substance use in our community."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Yeah. That sounds like a good place to start."
+    },
+    {
+      "role": "user",
+      "content": "Great. I'll also share with you a brochure that goes over the services that they offer."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And do you have any other suggestions?"
+    },
+    {
+      "role": "user",
+      "content": "Well, I think it's really important that you get support from people who care about you and who are willing to listen to your concerns. If you have a crisis, it's also important that you have someone you can call who will answer the phone when you need help."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you’re saying that I need to have a support network around me."
+    },
+    {
+      "role": "user",
+      "content": "That's right. And that's why I encourage you to consider joining a support group. It can be really helpful to talk to others who have gone through similar things and to hear their experiences."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Yeah. I think that could be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Great. So, what do you think would be the next steps for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, I could try to contact the alcohol and drug program and see what they have to offer."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I would be happy to help you with that."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And do you have any suggestions on how to start a support group?"
+    },
+    {
+      "role": "user",
+      "content": "Well, there are groups in our area that meet weekly and you could possibly start a group at your church. I would also be happy to help you with that."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you’re saying I need to get out there and find people who can help me."
+    },
+    {
+      "role": "user",
+      "content": "That's right."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "That's right."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out how to get more support."
+    },
+    {
+      "role": "user",
+      "content": "That's right."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "So, you've-you've got a lot of things going on right now, and it's quite a lot of work to do and quite a lot of support that you're trying to find."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, it sounds like you're-you're pretty committed to getting to that goal of getting to where you want to be."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you're pretty committed to getting to that goal of getting to where you want to be."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what kinds of things would help you get there?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’re looking for some accountability, some support, and some help with the tasks that you need to get done?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what kinds of things would help you get there?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’re feeling a little bit overwhelmed with all the things that you need to do, and you’re not sure where to start?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're looking for ways to get more support, whether it's from family, friends, or from a social service worker?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're looking for a little bit of structure and some concrete steps to get you going."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "Hey, how are you doing today? I wanted to talk about my last session and the things that have happened since."
+    },
+    {
+      "role": "assistant",
+      "content": "So you've been here before?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It was the first time I came in."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I’ve been feeling a lot like the same issues I talked about last time have just been getting worse."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're feeling the same way that you were feeling when you came here last time?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’ve been trying to keep to my schedule and do my research, but I just feel like I’m not getting anything done."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not getting enough done. What was it that you were hoping to accomplish today?"
+    },
+    {
+      "role": "user",
+      "content": "I’m trying to keep up with my schedule and keep working on my research. And today, I had a couple of tasks I wanted to accomplish, but I just couldn’t get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you have a list of things you need to do. And it sounds like you're hoping that by coming here today, you can get a little bit of momentum going and get some of those things accomplished."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to get some kind of momentum going."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I'm glad you came today. I think you're off to a good start by being here. And I think you're right, we do need to get some things accomplished. So I'd like to work with you today to help you get those things done. Um, what are your goals for today?"
+    },
+    {
+      "role": "user",
+      "content": "I guess the main goal is just to make some progress on my research. It’s been feeling like I’m not doing as well as I should be doing, so I’m hoping that I can make some kind of progress and feel like I’m back on track"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not making the progress that you need to make."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And that makes me feel like I’m not doing as well as I should be."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you've got a lot of self-expectations that you need to meet in order to feel successful."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like if I’m not doing as well as I think I should be, then I’m not successful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And that's causing you a lot of stress."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And then also, on top of that, the stress of just trying to do all of these things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're not only falling short of what you think you should be doing, but also that you're not able to do the things that you think you need to be doing."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And it’s a lot on my own. I’m trying to do all of these things by myself and it feels really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you’ve been trying to change for a while. What is it that you’re trying to change?"
+    },
+    {
+      "role": "user",
+      "content": "I guess it’s just trying to get the momentum going on my research."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're feeling like you need to get more momentum going in your research."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I guess that it’s been really hard lately because I’ve been trying to do so many things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re feeling like you need to get more momentum going in your research, but you’ve been trying to do a lot of other things and you feel like that’s kind of getting in the way."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m trying to do too many things on my own and it’s hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re feeling a little bit overwhelmed with trying to do a lot of things on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like it’s really hard to do things on my own. I don’t really have anyone else to help me with a lot of the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "So it sounds like you’ve been trying to get more momentum going in your research and you’re feeling a little bit overwhelmed with trying to do a lot of things on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And it feels really hard to get started with all of these things."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So it sounds like you’re feeling like you need some extra support and you’re not sure where to go from here."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m trying to find ways to get more support, but it’s been really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you’re kind of at a crossroads right now. You’ve been making some good efforts to get to bed on time, you’ve been trying to cut back on drinking, and you’ve been looking for more support, but you’re feeling like you’re not quite sure where to go from here."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’ve made some good efforts, but it’s still really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what would help make it easier for you to get to bed on time?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, I need to be better at planning my day so that I have enough time to get ready for bed on time."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So in order to get to bed on time, you need to plan your day differently."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I need to plan my day better so that I have enough time to do everything."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what would that look like? What would be different?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, it would be trying to plan my day more realistically. And not try to do so much in one day."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you'd be more mindful of how much time you're scheduling things and you'd be more realistic about how much time it takes to do each task?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And not trying to do so many things in one day."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what other goals do you have for yourself?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just continuing to work on my research and trying to make some kind of progress."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what are some things you can do to make that a priority?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to plan my day more realistically so that I have enough time to work on my research."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what do you think might be some barriers to making this plan?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to get myself started in the morning."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And getting myself started on the tasks I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're kind of feeling a little bit overwhelmed with what you have to do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And not sure how to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And it sounds like you're feeling that you need some support in getting started."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’ve got a list of things you need to do, you're feeling a bit overwhelmed, you need some support in getting started."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own and it’s really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you've got a lot on your plate and you need some support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’ve got a list of things you need to do, you're feeling a bit overwhelmed, you need some support in getting started."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you have some goals in mind around getting more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I need to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what kind of support would be most helpful for you?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you feel like you're doing a lot of things on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot on my own and it’s really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what would help you in that?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And also, just trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Because I feel like it’s really hard to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're-you're feeling like you need some help in terms of, you know, getting to bed on time, you know, doing your chores around the house, and some of those other things. And, um, you're feeling a little bit overwhelmed."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And it feels really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what would be helpful for you right now?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you really want to get to the next step, and you're willing to make some changes, but you're just not sure where to start."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m trying to find a way to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And not sure where to begin."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "So I’m hoping to find ways to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, and it sounds like you’re feeling a little bit a bit hesitant about what you might be able to do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m trying to do a lot on my own and it feels really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you’ve been making some efforts and you've been trying to do things on your own, but it sounds like it’s not quite enough and it's hard to do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m trying to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you've also been trying to get more support?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And it sounds like you've been doing some research on your own and looking into some of the services that are out there and you've been trying to get some information about them?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own and it feels really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're trying to do a lot of things on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And it’s really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So you’ve been trying to find some resources and information on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And trying to figure out where to begin."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And you’ve also noticed that you’re having a lot of stress and anxiety around this."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And trying to find ways to manage that."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And so I’m wondering if you’d be willing to explore this a little bit more, um, over the next few visits."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what do you think would be helpful for you in terms of getting started?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "Because I feel like it’s really hard to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah, yeah. And it sounds like you’ve been struggling with this for a while."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It’s been feeling like that for a while."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And it sounds like you’ve already taken some steps to get support by talking to your doctor and getting your medication prescription."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And it’s been helpful to talk to the doctor."
+    },
+    {
+      "role": "assistant",
+      "content": "That must have been helpful."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. It’s been helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "So, um, what are some of the other ways that you’re hoping to get more support?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So, you're not quite sure where to start or what to do next?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out how to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you’re-you’re at a point where you’re-you’re ready to-to take some steps, but you’re also realizing that you can’t do this alone."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And it feels really hard."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "So I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And you mentioned some things about your family."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And trying to figure out how to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So I guess I’m wondering, how would involving your family be helpful?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what would you need to do in order to get started?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what would you need to do in order to get started?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So having people around who can help you and support you is really important?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like right now you’re not getting enough support and you want to find ways to get more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And trying to figure out how to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're really at a crossroads in your life right now. You've made a decision that you need to make some changes in your life. You've identified some of the problems that you have. You're starting to think about some of the solutions to those problems. And yet, on the other hand, you're not sure if you can really do this alone. You're not sure if you have the skills to do this alone. And so you're looking for more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're trying to do a lot of things on your own and you need some more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're in a pretty tough spot. You're feeling pretty down. You feel like you've lost a lot of your friends. You feel like you have a lot of stress in your life. And yet, on the other hand, you also have some strengths. You've been able to get to the doctor's office. You've been able to make a decision to do something about your substance use. And you've also been able to identify some of the resources that you need to get some support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m trying to do a lot of things on my own."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you're trying to do a lot of things on your own and you need some more support."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I would encourage you to start with the local alcohol and drug program. They're a great resource. They can give you some information about support groups, low-cost counseling, and they can also give you information about some of the other services that are available around substance use in our community."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Yeah. That sounds like a good place to start."
+    },
+    {
+      "role": "assistant",
+      "content": "Great. I'll also share with you a brochure that goes over the services that they offer."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And do you have any other suggestions?"
+    },
+    {
+      "role": "assistant",
+      "content": "Well, I think it's really important that you get support from people who care about you and who are willing to listen to your concerns. If you have a crisis, it's also important that you have someone you can call who will answer the phone when you need help."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you’re saying that I need to have a support network around me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's right. And that's why I encourage you to consider joining a support group. It can be really helpful to talk to others who have gone through similar things and to hear their experiences."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Yeah. I think that could be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Great. So, what do you think would be the next steps for you?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, I could try to contact the alcohol and drug program and see what they have to offer."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. I would be happy to help you with that."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And do you have any suggestions on how to start a support group?"
+    },
+    {
+      "role": "assistant",
+      "content": "Well, there are groups in our area that meet weekly and you could possibly start a group at your church. I would also be happy to help you with that."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you’re saying I need to get out there and find people who can help me."
+    },
+    {
+      "role": "assistant",
+      "content": "That's right."
+    },
+    {
+      "role": "user",
+      "content": "And trying to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "That's right."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out how to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "That's right."
+    },
+    {
+      "role": "user",
+      "content": "And trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you've-you've got a lot of things going on right now, and it's quite a lot of work to do and quite a lot of support that you're trying to find."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, it sounds like you're-you're pretty committed to getting to that goal of getting to where you want to be."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you're pretty committed to getting to that goal of getting to where you want to be."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what kinds of things would help you get there?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’re looking for some accountability, some support, and some help with the tasks that you need to get done?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what kinds of things would help you get there?"
+    },
+    {
+      "role": "user",
+      "content": "I guess, just trying to find people who can help me with the things I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’re feeling a little bit overwhelmed with all the things that you need to do, and you’re not sure where to start?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're looking for ways to get more support, whether it's from family, friends, or from a social service worker?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And trying to figure out what I need to do to get started."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're looking for a little bit of structure and some concrete steps to get you going."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m hoping to find ways to get more support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I would be happy to help you brainstorm some ideas about where you can get some support. And if you'd be open to that, I can make some calls for you and help you get some referrals. Would that be helpful?"
+    }
+  ],
+  "doctor_history_trimmed": null
+}

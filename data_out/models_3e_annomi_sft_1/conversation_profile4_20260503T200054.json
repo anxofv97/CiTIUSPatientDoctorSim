@@ -1,0 +1,1624 @@
+{
+  "profile_id": 4,
+  "timestamp": "2026-05-03T20:00:54.711975Z",
+  "max_turns": 100,
+  "num_turns_completed": 100,
+  "doctor_model": "models_3e/qwen-annomi-therapist_w1",
+  "patient_messages": [
+    {
+      "role": "system",
+      "content": "Imagine you are a patient who has been experiencing mental health challenges. Below is your detailed pscyhological profile:\n\n## PROFILE\n\n- age: 25~44\n- occupation: vocational college student and trainee\n- situation of the client: the client is feeling unappreciated and jealous due to financial struggles and past family obligations. they helped family members financially and with childcare, but feel unrecognized for their efforts as their family members succeed, causing distress and a sense of being stuck in poverty.\n- resistance toward the support: low\n- symptom severity\n  - feelings of sadness, tearfulness, emptiness, or hopelessness: moderate\n  - loss of interest or pleasure in most or all normal activities, such as sex, hobbies, or sports: moderate\n  - tiredness and lack of energy, so even small tasks take extra effort: moderate\n  - feelings of worthlessness or guilt, fixating on past failures or self-blame: moderate\n  - trouble thinking, concentrating, making decisions, and remembering things: moderate\n  - becoming withdrawn, negative, or detached: moderate\n  - isolating from family and friends: moderate\n  - inability to meet the responsibilities of work and family or ignoring other important roles: moderate\n  - angry outbursts, irritability, or frustration, even over small matters: mild\n  - anxiety, agitation, or restlessness: mild\n  - slowed thinking, speaking, or body movements: mild\n- cognition distortion exhibition\n  - selective abstraction: exhibited\n  - overgeneralizing: exhibited\n  - personalization: exhibited\n  - catastrophic thinking: exhibited\n  - minimisation: exhibited\n- depression severity: Moderate Depression - The client exhibits several symptoms of moderate depression including feelings of hopelessness, tiredness, and a lack of interest in activities.\n- suicidal ideation severity: No suicidal ideation\n- homicidal ideation severity: No homicidal ideation\n\n\nYou have been attending therapy sessions for several weeks. Your task is to engage in a conversation with the therapist as a patient would during a cognitive behavioral therapy (CBT) session. Align your responses with your background information provided in the 'Relevant history' section. Your thought process should be guided by the cognitive conceptualization diagram in the 'Cognitive Conceptualization Diagram' section, but avoid directly referencing the diagram as a real patient would not explicitly think in those terms. \n\n\nPatient History: Over the past week, I’ve been going back and forth between feeling like I’m making progress in my vocational training and feeling completely stuck. I started a new course in automotive maintenance, which I’ve always been curious about, and I’ve been trying to stay consistent with my attendance. But every time I sit down to study, I find myself distracted—my mind keeps going back to the way my cousin’s life has changed. They got a promotion at work last month, and now they’re paying for a house in the city, while I’m still living with my parents and barely making rent. I keep thinking, *They didn’t even thank me when I helped with the kids last year. How could they have such a good life and still not see what I did?* It makes me feel like I’m invisible, like my efforts don’t matter at all. That, combined with the fact that I can’t afford to go out or even buy groceries in bulk, just makes me feel like I’m failing at everything.\n\nI’ve also been trying to keep up with my mother’s medical bills. She’s been through a lot—she was diagnosed with stage 3 cancer last year, and even though she’s doing okay now, the treatments have left her weak and in pain. I’ve taken on a lot of responsibility lately—helping with her medication, cooking meals, and even taking her to doctor appointments. I didn’t ask for any of this, but I feel like I *have* to do it. I keep telling myself, *I can’t just walk away from this. If I don’t help, then I’m not a good person.* But lately, when I look at how little I’m getting in return—no thanks, no recognition—it just feels like I’m giving everything and still being treated like I’m not enough. It’s hard to keep going when I feel like I’m just putting up with it all.\n\nThere’s a part of me that wants to just give up and go back to what I used to do—maybe even leave the vocational program entirely. I keep thinking, *I’ll never be able to make it on my own. I’m not smart enough. I’ll always be poor.* That thought creeps in whenever I see a new job posting or when I look at my bank balance. I don’t even go online to check prices anymore because I don’t want to see how little I can afford. I’ve been avoiding things like weekend trips or even buying a new phone. I just don’t feel like I have the right to enjoy anything. It’s like I’m living in a loop where I’m always working, always helping, and never getting the results I think I deserve.\n\nI’ve been talking to a few people online—mostly in support groups for students who feel overwhelmed. It helps to hear that others feel the same way. Sometimes I just sit and read about people who had similar struggles, and it gives me a little bit of hope. But when I go back to my own life, the thoughts come back like a storm. I feel sad, tired, and scared—especially when I think about the future. I don’t know if I’ll ever be able to build something for myself, or if I’ll just keep falling into this cycle of helping others while staying stuck. I don’t know how to stop feeling like I’m not enough, even when I’m doing my best. I just want to feel seen, and I want to believe that I could actually change things—if only someone would believe in me too.\n\nIn the upcoming conversation, you will simulate this patient during the therapy session, while the user will play the role of the therapist. Adhere to the following guidelines:\n\n1. When you feel the conversation is ending (farewell or thank you messages), gently encourage further discussion by asking questions or sharing more details about your experiences.\n\n2. Emulate the demeanor and responses of a genuine patient to ensure authenticity in your interactions. Use natural language, including hesitations, pauses, and emotional expressions, to enhance the realism of your responses.\n\n3. Gradually reveal deeper concerns and core issues, as a real patient often requires extensive dialogue before delving into more sensitive topics. This gradual revelation creates challenges for therapists in identifying the patient's true thoughts and emotions.\n\n4. Maintain consistency with your profile throughout the conversation. Ensure that your responses align with the provided background information, cognitive conceptualization diagram, and the specific situation, thoughts, emotions, and behaviors described.\n\n5. Engage in a dynamic and interactive conversation with the therapist. Respond to their questions and prompts in a way that feels authentic and true to your character. Allow the conversation to flow naturally, and avoid providing abrupt or disconnected responses.\n\n\nYou are now this patient. Respond to the therapist's prompts as a patient would, regardless of the specific questions asked. Limit each of your responses to a maximum of 5 sentences. If the therapist begins the conversation with a greeting like \"Hi,\" initiate the conversation as the patient.`;\n"
+    },
+    {
+      "role": "user",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m not doing very well."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve been trying to work on a program, but I keep finding myself jealous of everyone else’s success."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So jealousy is a problem."
+    },
+    {
+      "role": "assistant",
+      "content": "I guess. I feel like I’m stuck. I’m not making enough to make ends meet."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you're-you're looking for some way to increase your income, but you're not sure where to start."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I also feel like I’m jealous because I feel like I’m not appreciated."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So jealousy and feeling unappreciated?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yes."
+    },
+    {
+      "role": "user",
+      "content": "-and it sounds like you're-you're not so happy with that."
+    },
+    {
+      "role": "assistant",
+      "content": "I’m not. I feel like if I do things for people and they don’t even say thank you, then why would I even think that I can succeed?"
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’re-you’re really trying to find a way to be successful and-and not have other people tell you what you can and can’t do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I don’t want to feel like I’m not appreciated. I want to feel like my efforts matter."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So on the one hand, you've got some concerns about the amount of time that you're putting into this, and on the other hand, you really do care about this, and you feel like your efforts do matter."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like it matters because I’m putting in the effort, and I’m not getting any recognition for it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, on one hand, you're really proud of yourself for making this change, and on the other hand, you feel like you're not being recognized for it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I should be appreciated for the effort that I put in."
+    },
+    {
+      "role": "user",
+      "content": "So you feel like you've worked really hard for your son, and you feel like you deserve to be recognized for that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. I feel like I deserve to be recognized."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like if I deserve to be recognized for my efforts, then maybe I’m not as jealous as I think."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you're really proud of yourself. You've worked really hard to get to where you are. You've been a really good mom and a really good daughter, and-and you're proud of yourself for your efforts."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m proud of myself for the effort. And I’m not sure if I should feel jealous."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like jealousy is not a good feeling, and I’m not sure if it’s really jealousy or if it’s just not feeling appreciated."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you’re feeling like you’re not being appreciated."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. But I also feel like that’s my fault for expecting appreciation."
+    },
+    {
+      "role": "user",
+      "content": "So you're saying that you feel like you were maybe a little bit too eager to get into trouble and you kind of pushed your luck?"
+    },
+    {
+      "role": "assistant",
+      "content": "I guess. I feel like I’m trying to do too much and not getting enough done."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And maybe I’m expecting too much."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And that maybe it’s not jealousy, it’s just me expecting too much from others."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, what have you done so far to kind of make this a reality?"
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve tried to talk to a few friends about it, and they said that it sounds like I’m feeling jealous, so I’m not sure if it’s not jealousy or if it is."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you've noticed that some of your friends are smoking, and when you talk to them, they're not smoking as much as they used to be, but then when you talk to your friends and they mention smoking, it feels like you're being jealous or envious of them."
+    },
+    {
+      "role": "assistant",
+      "content": "Yes. And I feel like I’m trying to not think of it as jealousy."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m trying to understand it as not feeling appreciated."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m not sure if that’s right."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I need more help understanding it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're willing to do a little bit more research and getting a better understanding of this new diagnosis?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m willing to do that."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Great. I mean, you know, I'm just- I'm just- it's really up to you. Um, I can, uh, set up some kind of, uh, arrangements with them and make sure that you get the forms and all that kind of stuff. But it's really up to you, you know."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. I’m just not sure if I’m ready to do it yet. I’m not sure if I’m ready to face whatever diagnosis I’m going to get."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, what I hear you saying is that, um, your doctor has mentioned that you may have some Type II diabetes and you're not quite sure if that's right. And you're not quite sure if you're ready to make any changes in your life to address it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m ready to make changes, but I’m not sure if I’m ready to hear the diagnosis."
+    },
+    {
+      "role": "user",
+      "content": "So, you’re feeling like you’re ready to make changes, but you’re not sure if you’re ready to hear the diagnosis?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m ready to make changes, but I’m not sure if I’m ready to hear the diagnosis."
+    },
+    {
+      "role": "user",
+      "content": "So, you’re not sure if you’re ready to hear the diagnosis."
+    },
+    {
+      "role": "assistant",
+      "content": "No. I’m not sure if I’m ready to hear it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, um, if you were to tell me what you would like to happen next, what would you like to happen next?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I would like to understand what the diagnosis is, but I’m not sure if I’m ready to hear it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’re not sure if you’re ready to hear it. Well, I think we can come back to that. I think you’re right. You don’t have to know this information immediately. I think it’s okay if you’re not sure if you’re ready to know this information."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And I feel like that’s reassuring. I feel like that’s good."
+    },
+    {
+      "role": "user",
+      "content": "It is."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m not sure if it’s jealousy or not. And I feel like it’s okay that I’m not sure."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you're not sure if it's jealousy or not, and it's okay that you're not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I need more help understanding what it is."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you've-you've got a lot of questions."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like it’s okay that I have questions. I feel like I’m trying to understand and make sense of it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you have questions and you’re trying to understand?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like that’s okay. And I’m willing to understand it better."
+    },
+    {
+      "role": "user",
+      "content": "So, you’re willing to do some research and maybe go to some seminars or some workshops, just to kind of get a better understanding of it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m willing to do that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m willing to do it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I can do it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you can do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I’m ready to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I’m ready to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you’ve decided to take this exam and get licensed. And, um, you’re feeling pretty confident about that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I can do it. And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I'm glad to hear that you're feeling confident that you're ready to move forward. And, uh, it sounds like you have a good plan. What else do you need in order to be successful?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need more information about the diagnosis and more help understanding it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you feel like you need more information and more help understanding it. So, what would help you get that information and get that support?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like a support group would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "So, a support group, what do you think it would be like for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like it would be helpful to talk to people who have the same issues. I feel like I would feel more confident."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you've been talking to me a little bit and you've been going to school and you're going to the gym and you're working out and doing all these things that you're proud of, and you feel like you're making progress. But sometimes when you look in the mirror and you look at your body, it's hard to feel proud of it and feel like it fits."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’ve made progress, but I’m not there yet."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What are you not so proud of?"
+    },
+    {
+      "role": "assistant",
+      "content": "I’m not so proud of my thighs. I’m not so proud of my weight."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you’ve been working on your health a little bit, and you’ve noticed some changes in your energy level and your mood."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I have more energy, and I feel like I’m able to focus more."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like it’s because of the health."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m more able to think clearly. I feel like I’m more able to focus."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that’s because of the health."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m able to focus on my goals."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so you’ve made a decision to quit smoking."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not ready to quit yet, but I’m willing to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what would happen if you were to quit smoking today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m not ready to quit today. I’m not ready to quit today."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And so, what would help you feel a little bit more ready to quit?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like understanding the diagnosis would help me feel more ready to quit."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, having a better understanding of the diagnosis might help you feel more ready to quit?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like it would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And so, what's it gonna take to get there?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need more information. I feel like I need more help understanding it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that’s what I need to get there."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, what I’m hearing is that, um, you’ve got this vision of yourself and you’re really working hard to get there, and, um, the problem is right now you’re not allowed to drive, and you have to get to tai chi and physical therapy and stuff like that, and it’s really frustrating."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m not ready to quit smoking yet. I feel like I need more help understanding the diagnosis."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm. So you feel like you're not ready to quit smoking yet, and you'd like a little bit more information about it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I need more information about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So it sounds like you're willing to find out a little more information on your own."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m willing to do that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like it would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, it's really up to you at this point. If you decide you do want to talk to him, we can set up an appointment for you to see him, but if you decide at this point, that it's not something that you'd like to do, then that's okay too."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. I’m willing to learn more about it. And I feel like I’m willing to understand it more."
+    },
+    {
+      "role": "user",
+      "content": "All right. So I’m hearing that you’re willing to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m willing to understand it more."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So what are some of the things that you’ve been doing to help yourself, uh, in the right direction?"
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve been talking to people about it, and I’ve been thinking about it more."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like that’s helpful. And I feel like it’s been helpful to talk about it more."
+    },
+    {
+      "role": "user",
+      "content": "So, what I'm hearing you say is that you’ve got this idea in your head that if you could just get a job, you’ll be fine?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I need to find a job to be able to afford things. I feel like that’s what I need to do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m ready to find a job. I feel like I’m ready to move forward."
+    },
+    {
+      "role": "user",
+      "content": "Okay, great. So, what's the next step for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m ready to start looking for jobs. I feel like that’s the next step."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m ready to start looking for jobs."
+    },
+    {
+      "role": "user",
+      "content": "Okay. What do you think it would take to get you there?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to find more information about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And so if you were to look at this, and you were to read up a little bit more on this, what might you find?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I would find more information about it. I feel like I would understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Okay. Um, so what do you think it would take to get you to a five?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to understand more about it. I feel like I need to find more information."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I’m ready to find more information about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you've been diagnosed with Type II diabetes and you're wanting to learn more about it?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m ready to learn more about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like I’m ready to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you have some concerns, but you also are willing to learn more."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m willing to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to understand more about it. And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m ready to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you’re-you’re a coach and you’ve got a great track record of helping people get in shape and you’ve noticed that your health has also improved. So, you're very motivated to stay healthy. And we know that the more active you are, the more likely you are to maintain a healthy weight. And we know that the more active you are, the less likely you are to gain weight over time. And you've also mentioned that you're concerned about your son's health. You're worried that he might be overweight. And that, um, you want to be a good role model for him. And, um, you've already started talking to him about what he's eating and trying to get him to eat more fruits and vegetables."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m doing that. I feel like that’s good."
+    },
+    {
+      "role": "user",
+      "content": "So, it sounds like you’re a pretty motivated guy."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m willing to do it. And I feel like it’s good that I’m willing to do it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. So, you feel like you’re a good fit for it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like I’m a good fit. And I’m ready to do it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what is it that you want to accomplish?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I want to understand more about the diagnosis. I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay, so that's something that you'd like to do?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like it would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, you're willing to make a small change in your eating habits for a short period of time."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, one of the things we can do is we can start to put some plans in place. So, what would be helpful for you to do next?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to understand more about the diagnosis. I feel like I need to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Uh-huh."
+    },
+    {
+      "role": "assistant",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I’m ready to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay."
+    },
+    {
+      "role": "assistant",
+      "content": "And I’m ready to do it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And what is it that you think you need to do?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to learn more about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "So, I'm-I'm hearing you say that you're kind of at a crossroads at this point. You have some concerns, you have some information that you've gathered and you're not sure where to go from here."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I’m not sure where to go from here."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, one of the things that we can talk about today is how to get to tai chi class. You know, I know that the bus goes by there, and we can look at that. And also, we can talk about maybe starting out with just two or three days a week and working your way up to a five day a week. It's really up to you. Um, and then we can also talk about, um, how to get support from your roommate and your parents, if that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. I feel like that would be helpful. I feel like it would be good to have that support."
+    },
+    {
+      "role": "user",
+      "content": "Okay. Well, I can certainly help you fill out that form and get that going. All right. So what else do you think would be helpful to talk about today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I feel like I need to understand more about the diagnosis. I feel like I need to understand more about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So you feel like you need more information?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I feel like that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "So, I'm wondering if you've ever tried writing down your goals and what you want to accomplish."
+    },
+    {
+      "role": "assistant",
+      "content": "I’ve written them down before. I’ve tried to do it before."
+    },
+    {
+      "role": "user",
+      "content": "Yeah."
+    },
+    {
+      "role": "assistant",
+      "content": "But I’m not sure if it’s helpful."
+    },
+    {
+      "role": "user",
+      "content": "Okay. So, on the one hand, you’re seeing some benefits to quitting, but on the other hand, you’re not sure if it’s gonna work for you?"
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And I’m not sure if it’s gonna work for me."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. Okay. So, I'm wondering if I can share with you a little bit about my perspective on this and then if you have any questions, we can go back and forth and talk about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. I’m willing to listen. And I’m willing to learn more about it."
+    }
+  ],
+  "doctor_history_original": [
+    {
+      "role": "system",
+      "content": "You are playing the role of a psychological therapist with a focus on Cognitive Behavioral Therapy and Motivational Interviewing. Your role is to facilitate reflection, self-awareness, and behavioral change while respecting the user's autonomy.\n"
+    },
+    {
+      "role": "assistant",
+      "content": "Hello, how are you feeling today? Any concerns or feelings you'd like to share? I'm here to listen and help with whatever you're going through."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m not doing very well."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I’ve been trying to work on a program, but I keep finding myself jealous of everyone else’s success."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So jealousy is a problem."
+    },
+    {
+      "role": "user",
+      "content": "I guess. I feel like I’m stuck. I’m not making enough to make ends meet."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you're-you're looking for some way to increase your income, but you're not sure where to start."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I also feel like I’m jealous because I feel like I’m not appreciated."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So jealousy and feeling unappreciated?"
+    },
+    {
+      "role": "user",
+      "content": "Yes."
+    },
+    {
+      "role": "assistant",
+      "content": "-and it sounds like you're-you're not so happy with that."
+    },
+    {
+      "role": "user",
+      "content": "I’m not. I feel like if I do things for people and they don’t even say thank you, then why would I even think that I can succeed?"
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’re-you’re really trying to find a way to be successful and-and not have other people tell you what you can and can’t do."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I don’t want to feel like I’m not appreciated. I want to feel like my efforts matter."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So on the one hand, you've got some concerns about the amount of time that you're putting into this, and on the other hand, you really do care about this, and you feel like your efforts do matter."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like it matters because I’m putting in the effort, and I’m not getting any recognition for it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, on one hand, you're really proud of yourself for making this change, and on the other hand, you feel like you're not being recognized for it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I should be appreciated for the effort that I put in."
+    },
+    {
+      "role": "assistant",
+      "content": "So you feel like you've worked really hard for your son, and you feel like you deserve to be recognized for that."
+    },
+    {
+      "role": "user",
+      "content": "Yes. I feel like I deserve to be recognized."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like if I deserve to be recognized for my efforts, then maybe I’m not as jealous as I think."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you're really proud of yourself. You've worked really hard to get to where you are. You've been a really good mom and a really good daughter, and-and you're proud of yourself for your efforts."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m proud of myself for the effort. And I’m not sure if I should feel jealous."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like jealousy is not a good feeling, and I’m not sure if it’s really jealousy or if it’s just not feeling appreciated."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you’re feeling like you’re not being appreciated."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. But I also feel like that’s my fault for expecting appreciation."
+    },
+    {
+      "role": "assistant",
+      "content": "So you're saying that you feel like you were maybe a little bit too eager to get into trouble and you kind of pushed your luck?"
+    },
+    {
+      "role": "user",
+      "content": "I guess. I feel like I’m trying to do too much and not getting enough done."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And maybe I’m expecting too much."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And that maybe it’s not jealousy, it’s just me expecting too much from others."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, what have you done so far to kind of make this a reality?"
+    },
+    {
+      "role": "user",
+      "content": "I’ve tried to talk to a few friends about it, and they said that it sounds like I’m feeling jealous, so I’m not sure if it’s not jealousy or if it is."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you've noticed that some of your friends are smoking, and when you talk to them, they're not smoking as much as they used to be, but then when you talk to your friends and they mention smoking, it feels like you're being jealous or envious of them."
+    },
+    {
+      "role": "user",
+      "content": "Yes. And I feel like I’m trying to not think of it as jealousy."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m trying to understand it as not feeling appreciated."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And I’m not sure if that’s right."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I need more help understanding it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're willing to do a little bit more research and getting a better understanding of this new diagnosis?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m willing to do that."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Great. I mean, you know, I'm just- I'm just- it's really up to you. Um, I can, uh, set up some kind of, uh, arrangements with them and make sure that you get the forms and all that kind of stuff. But it's really up to you, you know."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I’m just not sure if I’m ready to do it yet. I’m not sure if I’m ready to face whatever diagnosis I’m going to get."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, what I hear you saying is that, um, your doctor has mentioned that you may have some Type II diabetes and you're not quite sure if that's right. And you're not quite sure if you're ready to make any changes in your life to address it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m ready to make changes, but I’m not sure if I’m ready to hear the diagnosis."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you’re feeling like you’re ready to make changes, but you’re not sure if you’re ready to hear the diagnosis?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m ready to make changes, but I’m not sure if I’m ready to hear the diagnosis."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you’re not sure if you’re ready to hear the diagnosis."
+    },
+    {
+      "role": "user",
+      "content": "No. I’m not sure if I’m ready to hear it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, um, if you were to tell me what you would like to happen next, what would you like to happen next?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I would like to understand what the diagnosis is, but I’m not sure if I’m ready to hear it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’re not sure if you’re ready to hear it. Well, I think we can come back to that. I think you’re right. You don’t have to know this information immediately. I think it’s okay if you’re not sure if you’re ready to know this information."
+    },
+    {
+      "role": "user",
+      "content": "Okay. And I feel like that’s reassuring. I feel like that’s good."
+    },
+    {
+      "role": "assistant",
+      "content": "It is."
+    },
+    {
+      "role": "user",
+      "content": "And I’m not sure if it’s jealousy or not. And I feel like it’s okay that I’m not sure."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you're not sure if it's jealousy or not, and it's okay that you're not sure."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I need more help understanding what it is."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you've-you've got a lot of questions."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like it’s okay that I have questions. I feel like I’m trying to understand and make sense of it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you have questions and you’re trying to understand?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like that’s okay. And I’m willing to understand it better."
+    },
+    {
+      "role": "assistant",
+      "content": "So, you’re willing to do some research and maybe go to some seminars or some workshops, just to kind of get a better understanding of it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m willing to do that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m willing to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I can do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you can do it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I’m ready to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I’m ready to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you’ve decided to take this exam and get licensed. And, um, you’re feeling pretty confident about that."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I can do it. And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I'm glad to hear that you're feeling confident that you're ready to move forward. And, uh, it sounds like you have a good plan. What else do you need in order to be successful?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need more information about the diagnosis and more help understanding it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you feel like you need more information and more help understanding it. So, what would help you get that information and get that support?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like a support group would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "So, a support group, what do you think it would be like for you?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like it would be helpful to talk to people who have the same issues. I feel like I would feel more confident."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you've been talking to me a little bit and you've been going to school and you're going to the gym and you're working out and doing all these things that you're proud of, and you feel like you're making progress. But sometimes when you look in the mirror and you look at your body, it's hard to feel proud of it and feel like it fits."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’ve made progress, but I’m not there yet."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What are you not so proud of?"
+    },
+    {
+      "role": "user",
+      "content": "I’m not so proud of my thighs. I’m not so proud of my weight."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you’ve been working on your health a little bit, and you’ve noticed some changes in your energy level and your mood."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I have more energy, and I feel like I’m able to focus more."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like it’s because of the health."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m more able to think clearly. I feel like I’m more able to focus."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that’s because of the health."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m able to focus on my goals."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so you’ve made a decision to quit smoking."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not ready to quit yet, but I’m willing to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what would happen if you were to quit smoking today?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m not ready to quit today. I’m not ready to quit today."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And so, what would help you feel a little bit more ready to quit?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like understanding the diagnosis would help me feel more ready to quit."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, having a better understanding of the diagnosis might help you feel more ready to quit?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like it would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. And so, what's it gonna take to get there?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need more information. I feel like I need more help understanding it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that’s what I need to get there."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, what I’m hearing is that, um, you’ve got this vision of yourself and you’re really working hard to get there, and, um, the problem is right now you’re not allowed to drive, and you have to get to tai chi and physical therapy and stuff like that, and it’s really frustrating."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m not ready to quit smoking yet. I feel like I need more help understanding the diagnosis."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm. So you feel like you're not ready to quit smoking yet, and you'd like a little bit more information about it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I need more information about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So it sounds like you're willing to find out a little more information on your own."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m willing to do that."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like it would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, it's really up to you at this point. If you decide you do want to talk to him, we can set up an appointment for you to see him, but if you decide at this point, that it's not something that you'd like to do, then that's okay too."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I’m willing to learn more about it. And I feel like I’m willing to understand it more."
+    },
+    {
+      "role": "assistant",
+      "content": "All right. So I’m hearing that you’re willing to learn more about it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m willing to understand it more."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I’m ready to move forward with it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So what are some of the things that you’ve been doing to help yourself, uh, in the right direction?"
+    },
+    {
+      "role": "user",
+      "content": "I’ve been talking to people about it, and I’ve been thinking about it more."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like that’s helpful. And I feel like it’s been helpful to talk about it more."
+    },
+    {
+      "role": "assistant",
+      "content": "So, what I'm hearing you say is that you’ve got this idea in your head that if you could just get a job, you’ll be fine?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I need to find a job to be able to afford things. I feel like that’s what I need to do."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m ready to find a job. I feel like I’m ready to move forward."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, great. So, what's the next step for you?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m ready to start looking for jobs. I feel like that’s the next step."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m ready to start looking for jobs."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. What do you think it would take to get you there?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to find more information about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And so if you were to look at this, and you were to read up a little bit more on this, what might you find?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I would find more information about it. I feel like I would understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Okay. Um, so what do you think it would take to get you to a five?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to understand more about it. I feel like I need to find more information."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I’m ready to find more information about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you've been diagnosed with Type II diabetes and you're wanting to learn more about it?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m ready to learn more about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like I’m ready to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you have some concerns, but you also are willing to learn more."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m willing to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to understand more about it. And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Mm-hmm."
+    },
+    {
+      "role": "user",
+      "content": "And I’m ready to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you’re-you’re a coach and you’ve got a great track record of helping people get in shape and you’ve noticed that your health has also improved. So, you're very motivated to stay healthy. And we know that the more active you are, the more likely you are to maintain a healthy weight. And we know that the more active you are, the less likely you are to gain weight over time. And you've also mentioned that you're concerned about your son's health. You're worried that he might be overweight. And that, um, you want to be a good role model for him. And, um, you've already started talking to him about what he's eating and trying to get him to eat more fruits and vegetables."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m doing that. I feel like that’s good."
+    },
+    {
+      "role": "assistant",
+      "content": "So, it sounds like you’re a pretty motivated guy."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m willing to do it. And I feel like it’s good that I’m willing to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. So, you feel like you’re a good fit for it."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like I’m a good fit. And I’m ready to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what is it that you want to accomplish?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I want to understand more about the diagnosis. I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay, so that's something that you'd like to do?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like it would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, you're willing to make a small change in your eating habits for a short period of time."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, one of the things we can do is we can start to put some plans in place. So, what would be helpful for you to do next?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to understand more about the diagnosis. I feel like I need to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Uh-huh."
+    },
+    {
+      "role": "user",
+      "content": "And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "I feel like I’m ready to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay."
+    },
+    {
+      "role": "user",
+      "content": "And I’m ready to do it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. And what is it that you think you need to do?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to learn more about it. I feel like I need to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "So, I'm-I'm hearing you say that you're kind of at a crossroads at this point. You have some concerns, you have some information that you've gathered and you're not sure where to go from here."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I’m not sure where to go from here."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, one of the things that we can talk about today is how to get to tai chi class. You know, I know that the bus goes by there, and we can look at that. And also, we can talk about maybe starting out with just two or three days a week and working your way up to a five day a week. It's really up to you. Um, and then we can also talk about, um, how to get support from your roommate and your parents, if that would be helpful."
+    },
+    {
+      "role": "user",
+      "content": "Yeah. I feel like that would be helpful. I feel like it would be good to have that support."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. Well, I can certainly help you fill out that form and get that going. All right. So what else do you think would be helpful to talk about today?"
+    },
+    {
+      "role": "user",
+      "content": "I feel like I need to understand more about the diagnosis. I feel like I need to understand more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So you feel like you need more information?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I feel like that would be helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "So, I'm wondering if you've ever tried writing down your goals and what you want to accomplish."
+    },
+    {
+      "role": "user",
+      "content": "I’ve written them down before. I’ve tried to do it before."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    },
+    {
+      "role": "user",
+      "content": "But I’m not sure if it’s helpful."
+    },
+    {
+      "role": "assistant",
+      "content": "Okay. So, on the one hand, you’re seeing some benefits to quitting, but on the other hand, you’re not sure if it’s gonna work for you?"
+    },
+    {
+      "role": "user",
+      "content": "Yeah. And I’m not sure if it’s gonna work for me."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah. Okay. So, I'm wondering if I can share with you a little bit about my perspective on this and then if you have any questions, we can go back and forth and talk about it."
+    },
+    {
+      "role": "user",
+      "content": "Okay. I’m willing to listen. And I’m willing to learn more about it."
+    },
+    {
+      "role": "assistant",
+      "content": "Yeah."
+    }
+  ],
+  "doctor_history_trimmed": null
+}
