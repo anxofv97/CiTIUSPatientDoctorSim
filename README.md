@@ -1,8 +1,10 @@
-# PatientDoctorSim
+# ROGERS
 
 A simulation and evaluation framework for automated doctor-patient conversations.
 
 The repository runs therapy-style dialogues between a local doctor LLM and a patient endpoint, supports fine-tuning data preparation, and includes evaluation tooling for generated conversation outputs.
+
+This is the implementation for the paper "ROGERS: Generating Synthetic Therapy Sessions using LLM Therapists Aligned with CBT and MI principles". 
 
 ## Key components
 
@@ -141,6 +143,7 @@ The patient simulation uses a local Eeyore service endpoint by default at `http:
 
 - The doctor model can be either a local model directory (e.g. `models_3e/qwen-cactus-therapist_w5`) or a Hugging Face model identifier.
 - Generated conversation outputs are stored in JSON and TXT formats under `data_out/`.
+- Fine-tuned models and datasets will be uploaded to Hugging Face upon acceptance.
 
 ## License
 
